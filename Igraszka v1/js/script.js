@@ -382,15 +382,15 @@ let script = {
 				"Dialog": "a - Wygodnie ci w takich ciuchach?",
 				"4C1": {
 				"Text": " - Oczywiście. Lubię obcisłe ciuchy.",
-				"Do":"jump 4A1",
+				"Do":"jump 4C1",
 			},
 				"4C2": {
 				"Text": " - Z każdą kolejną minutą coraz bardziej żałuję, że nie założyłam sukienki.",
-				"Do":"jump 4A2",
+				"Do":"jump 4C2",
 			},
 				"4C3": {
 				"Text": "Powiedz, że najchętniej zdjęłabyś majtki, bo jest tak gorąco.",
-				"Do":"jump 4A3",
+				"Do":"jump 4C3",
 			},
 		},
 	}
@@ -429,7 +429,7 @@ let script = {
 [
 "s - No to kąpiesz się na golasa! Za 10 minut będziemy na miejscu, więc nie warto zawracać.",
 "Aśka wyglada na smutną, zapewne myśli, że nie będziesz chciała pływać. Stasiek dostrzega to i szybko się odzywa.",
-"s - Powinniśmy być sami, to jest odizolowane miejsce. Chyba będziesz mogła bez skrępowania zanużyć nóżki.',
+"s - Powinniśmy być sami, to jest odizolowane miejsce. Chyba będziesz mogła bez skrępowania zanużyć nóżki.",
 ],
 "A45":
 [
@@ -439,10 +439,7 @@ let script = {
 "Pytasz żartobliwie, a Aśka zaczyna się śmiać.",
 "a - Na niego nie ma co liczyć, bo kiepsko pływa.",
 ],
-	
-	
-	
-	
+		
 "4B1":
 //Zwykłe ciuchy
 	[
