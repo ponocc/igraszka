@@ -416,30 +416,118 @@ let script = {
 
 "4A2":
 [
-"Asia potakuje, widzisz, że jest czerwona na twarzy. Stasiek mówi, że w aucie popsuła się klimatyzacja i nie zdążył jej naprawić, przez co wszystko w środku się gotuje. Jego dziewczyna marudzi, bo założyła na siebie strój kąpielowy i jest jej jeszcze bardziej gorąco. Potem dodaje, że nie może doczekać się jeziora i zimnej wody.",	
+"Asia potakuje, widzisz, że jest czerwona na twarzy. Stasiek mówi, że w aucie popsuła się klimatyzacja i nie zdążył jej naprawić, przez co wszystko w środku się gotuje. Jego dziewczyna marudzi, bo założyła na siebie strój kąpielowy i jest jej jeszcze bardziej gorąco. Potem dodaje, że nie może doczekać się jeziora i zimnej wody.",
+{
+			"Choice": {
+				"4A4": {
+				"Text": " - O kurczę, strój! Zapomniałam!",
+				"Do":"jump 4A4",
+			},
+				"4A5": {
+				"Text": " - Umrę ze szczęścia jak wskoczę do wody.",
+				"Do":"jump 4A5",
+			},
+				"4A8": {
+				"Text": " - Też się nie mogę doczekać, aż pokażesz trochę ciałka.",
+				"Do":"jump 4A8",
+			},
+}
 ],
 "4A3":
 [
 "s - No to zdejmij. Przecież możesz jechać w stroju kąpielowym.",
 "s - Aśka, ty też. Jest ze trzydzieści stopni...",
 "Spotykasz spojrzenie chłopaka we wstecznym lusterku. Chyba sprawdza jaka będzie Twoja reakcja.",
-"a - Ona mówiła o majtkach, Staś. Zostanie w samej bieliźnie wyklucza zdjęcie gaci.",	
+"a - Ona mówiła o majtkach, Staś. Zostanie w samej bieliźnie wyklucza zdjęcie gaci.",
+	{
+			"Choice": {
+				"4A9": {
+				"Text": "Zaśmiej się i po chwili zacznij się rozbierać.",
+				"Do":"jump 4A9",
+			},
+				"4A4": {
+				"Text": " - O rety, strój! Zapomniałam.",
+				"Do":"jump 4A4",
+			},
+		},
+	}
 ],
+	
 "4A4":
 [
-"s - No to kąpiesz się na golasa! Za 10 minut będziemy na miejscu, więc nie warto zawracać.",
+"s - No to kąpiesz się na golasa! Za dziesięć minut będziemy na miejscu, więc nie warto zawracać.",
 "Aśka wyglada na smutną, zapewne myśli, że nie będziesz chciała pływać. Stasiek dostrzega to i szybko się odzywa.",
 "s - Powinniśmy być sami, to jest odizolowane miejsce. Chyba będziesz mogła bez skrępowania zanużyć nóżki.",
+	{
+			"Choice": {
+				"4A6": {
+				"Text": " - Myślisz, że się przy tobie rozbiorę?!",
+				"Do":"jump 4A6",
+			},
+				"4A10": {
+				"Text": " - Eh... jakbyście i wy zapomnieli stroju, to bym się nie krępowała nago pływać.",
+				"Do":"jump 4A10",
+			},
+				"4A11": {
+				"Text": " - Trudno, będę tylko moczyć nóżki.",
+				"Do":"jump 4A11",
+			},
+		},
+	}
 ],
-"A45":
+	
+"4A5":
 [
 "Stasiek i Aśka reagują śmiechem na twoją deklarację.",
 "s - Tylko się nie utop.",
-"i - Chyba mnie uratujecie, prawda?",
+"i - No bez przesady, przecież będziecie na miejscu. Chyba mnie uratujecie, prawda?",
 "Pytasz żartobliwie, a Aśka zaczyna się śmiać.",
 "a - Na niego nie ma co liczyć, bo kiepsko pływa.",
+	{
+			"Choice": {
+				"4A6": {
+				"Text": " - To chyba popływamy same.",
+				"Do":"jump 4A6",
+			},
+				"4A7": {
+				"Text": " - Ale na ciebie mogę liczyć?",
+				"Do":"jump 4A7",
+			},
+		},
+	}
+	
+],	
+	
+"4A6":
+[
+	"s - No to ja zostanę na brzegu, a wy we dwie pójdziecie popływać gdzieś indziej. Może być?",
+	"Chłopak spogląda na Aśkę, jakby wyczekując jakiejś określonej reakcji. Niestety ona postanawia siedzieć cicho, uśmiechając się tylko.",
+	"s - Jezioro jest duże."
 ],
+	
+"4A7":
+[
+	"a - Oczywiście, kochana.",
+	"Odpowiada radośnie Aśka i odwraca się w twoją stronę.",
+	"a - Idziemy od razu do wody?",	
+],
+	
+"4A8":
+	[
+"s - Hej, a mojego nie chcesz oglądać? - Oburzył się nagle Staś.
+"a- Przestań. Zamierzasz wchodzić do wody? - Spytała go Aśka i odwróciła się w twoją stronę.  - On nie potrafi pływać.
+		],
+"4A9":
+	[
+ - Fajny stanik. - Komentuje Stasiek, gdy zostajesz w samej bieliźnie. Jego partnerka zgadza się z nim. Dostrzegasz delikatny ruch jej dłoni, która przesuwa się po jej rozgrzanej szyi. Chłopak ciągle zerka na ciebie w lusterku.
+	],
+	
+"4A10":
+	[
 		
+	],
+	
+	
 "4B1":
 //Zwykłe ciuchy
 	[
