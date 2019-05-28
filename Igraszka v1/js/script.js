@@ -1,4 +1,4 @@
-﻿"use strict";
+"use strict";
 
 /* exported messages */
 /* exported notifications */
@@ -69,12 +69,7 @@ const scenes = {
 
 // Define the Characters
 const characters = {
-	"h": {
-		"Name": "Hikaru",
-		"Color": "#5bcaff"
-	},
-
-	"s": {
+		"s": {
 		"Name": "Staś",
 		"Color": "#5da9fc"
 	},
@@ -94,7 +89,6 @@ const characters = {
 let script = {
 	// Prolog - W barze
 "Start": [
-
 		"Nazywasz się Ida. Jesteś dwudziestopięcio latką, pracującą w dużej korporacji od momentu ukończenia studiów. Masz 169 cm wzrostu, zielone oczy i naturalne, jasnobrązowe włosy. Jest czwartek. Umówiłaś się ze znajomymi na piwo i planszówki w ulubionym pubie. Niestety większość ekipy się wykruszyła i ostatecznie spotykacie się tylko we trójkę. Oprócz ciebie, przychodzą jeszcze Staś i Asia, są parą. Rezygnujecie z grania w gry i po prostu zamawiacie piwo. Przypadkowo, w trakcie rozmowy, wspominają o swoich planach. Para jedzie pod namiot. Mają już wszystko zaplanowane. Wybrali miejsce na Kaszubach, nad niewielkim jeziorem, otoczonym lasem.",
 		{
 			"Choice": {
@@ -133,9 +127,7 @@ let script = {
 	],
 
 	"3": [
-		"Wyobrażasz sobie, że jest ciepły wieczór po długim, upalnym dniu.",
-		"Wchodzisz naga do wody i powoli podpływasz do Stasia i Aśki, którzy stoją zanużeni do pasa w wodzie.",
-		"Oboje są nadzy i bardzo zajęci sobą. Ignorują cię. Z niewyjaśnionych powódw, złości cię to.",
+		"Wyobrażasz sobie, że jest ciepły wieczór po długim, upalnym dniu. Wchodzisz naga do wody i powoli podpływasz do Stasia i Aśki, którzy stoją zanużeni do pasa w wodzie. Oboje są nadzy i bardzo zajęci sobą. Ignorują cię. Z niewyjaśnionych powódw, złości cię to.",
 		"wait 2000",
 		"Resztę wieczoru rozmawiacie o głupkowatych memach i serialach z Netflixa.",
 		"jump fine",
@@ -162,9 +154,8 @@ let script = {
 ],
 			"Roz1-1":
 			[
-				"s - No to super. Jedziemy w sobotę, wtedy ma być ładnie i ciepło.",
-			  "Chłopak uśmiecha się. Wygląda na lekko podekscytowanego.",
-			  "Asia po chwili też się uśmiecha, widać, że od dawna czeka na dobrą pogodę.",
+			  "s - No to super. Jedziemy w sobotę, wtedy ma być ładnie i ciepło.",
+			  "Chłopak uśmiecha się. Wygląda na lekko podekscytowanego. Asia po chwili też się uśmiecha, widać, że od dawna czeka na dobrą pogodę.",
 			  "a - Ciągle jest zimno. Normalnie kurewska epoka lodowcowa.",
 			  "jump Roz3",
 			],
@@ -174,8 +165,7 @@ let script = {
 				"i - Nie mam namiotu.",
 				"s - No to musisz sobie jakiś ogarnąć do soboty. Bo jedziemy w sobotę.",
 				"s - Ma być wtedy ładnie i ciepło.",
-				"Chłopak uśmiecha się.",
-				"Asia po chwili też się uśmiecha, widać, że od dawna czeka na dobrą pogodę.",
+				"Chłopak uśmiecha się. Asia po chwili też się uśmiecha, widać, że od dawna czeka na dobrą pogodę.",
 				"a - Bez przerwy jest zimno. Chcę już lato!",
 				"jump Roz3",
 
@@ -210,8 +200,7 @@ let script = {
 	"Roz2-1":
 		[
 				"s - Jedziemy w sobotę, wtedy ma być ładnie i ciepło.",
-				"Chłopak uśmiecha się.",
-				"Asia po chwili też się uśmiecha, widać, że od dawna czeka na dobrą pogodę.",
+				"Chłopak uśmiecha się. Asia po chwili też się uśmiecha, widać, że od dawna czeka na dobrą pogodę.",
 				"a - Ciągle jest zimno. Normalnie kurewska epoka lodowcowa.",
 				"a - Chcesz jechać z nami? Czy masz już jakieś plany?",
 				{
@@ -308,12 +297,7 @@ let script = {
 //Podróż
 "Roz4":
 [
-"Obudziłaś się wcześnie i od razu zauważyłaś, że pogoda bardzo dopisała.",
-"Minęło kilkanaście dni. Przez cały ten czas utrzymywałaś kontakt ze Staśkiem i Asią.",
-"Oboje wydawali się bardzo podekscytowani wyjazdem.",
-"Wysłali ci kilka zdjęć miejsca, które wybrali.",
-"Nieduża polana, tuż nad brzegiem jeziora. Dość miejsca na kilka namiotów i aut.",
-"Może nawet uda wam się rozpalić nieduże ognisko.",
+"Obudziłaś się wcześnie i od razu zauważyłaś, że pogoda bardzo dopisała. Minęło kilkanaście dni. Przez cały ten czas utrzymywałaś kontakt ze Staśkiem i Asią. Oboje wydawali się bardzo podekscytowani wyjazdem. Wysłali ci kilka zdjęć miejsca, które wybrali. Wydawało się ci, że na tej niedużej polanie jest dość miejsca na kilka namiotów i aut. Może nawet będziecie mieli szansę rozpalić ognisko.",
 "wait 1000",
 "Ogarnęłaś namiot?",
 {
@@ -332,10 +316,7 @@ let script = {
 ],
 "Roz4-1":
 [
-	"Wydaje ci się, że namiot za niecałe 100PLN nie wytrzyma pierwszej lepszej wichury.",
-	"Ale lepsze to niż spanie pod gołym niebem.",
-	"Pakujesz wszystko do plecaka.",
-	"Dostajesz SMS-a od Aśki. Niebawem powinni być pod twoim domem.",
+	"Wydaje ci się, że namiot za niecałe 100PLN nie wytrzyma pierwszej lepszej wichury. Ale lepsze to niż spanie pod gołym niebem. Zaczynasz pakować wszystko do plecaka. Wkrótce dostajesz SMS-a od Aśki. Niebawem powinni być pod twoim domem.",
 	{
 			"Choice": {
 			"Dialog":"Co na siebie założyłaś?",
@@ -357,28 +338,54 @@ let script = {
 
 "Roz4A":
 [
-	"Naprawdę lubisz tę sukienkę. Bez chwili wahania zakładasz ją na siebie.",
-	"Wreszcie pod twój dom przybywa auto Staśka.",
-	"Wrzucasz swoje rzeczy do środka i ładujesz się na tylną kanapę.",
-	"Przyglądasz się im szybko. Stasiek ma na sobie koszulkę i jakieś krótkie spodnie.",
-	"Asia też ubrała się w sukienkę, sięga jej do połowy łydek, ma szerokie ramiączka i głęboki dekolt.",
-	"Chyba spodobała im się twoja sukienka, bo oboje ją chwalą.",
+"Naprawdę lubisz tę sukienkę. Bez chwili wahania zakładasz ją na siebie. Gdy kończysz się ubierać, pod twój dom przybywa auto Staśka. Wrzucasz swoje rzeczy do środka i ładujesz się na tylną kanapę. Przyglądasz się szybko swoim towarzyszom. Stasiek ma na sobie koszulkę i jakieś krótkie spodnie. Asia też ubrała się w sukienkę, sięga jej do połowy łydek, ma szerokie ramiączka i głęboki dekolt. Chyba spodobała im się twoja sukienka, bo oboje ją chwalą.",
+"Stasiek ma na sobie koszulkę i jakieś krótkie spodnie. Asia też jest w sukience, sięga jej do połowy łydek i ma szerokie ramiączka z dekoltem.  Oboje chwalą Twoją sukienkę, mówiąc że jest śliczna.",
+{
+			"Choice": {
+				"4A1": {
+				"Text": "Podziękuj i pochwali ich ubiór.",
+				"Do":"jump 4A1",
+			},
+				"4A2": {
+				"Text": "Podziękuj i spytaj, czy Aśce nie jest za gorąco w tak długiej sukience.",
+				"Do":"jump 4A2",
+			},
+				"4A3C": {
+				"Text": "Powiedz, że najchętniej zdjęłabyś majtki, bo jest tak gorąco.",
+				"Do":"jump 4A3",
+			},
+		},
+	}
 
 ],
 
 "Roz4B":[
-	"Nie masz ochoty na kombinowanie z ubiorem.",
-	"Wreszcie pod twój dom przybywa auto Staśka.",
-	"Wrzucasz swoje rzeczy do środka i ładujesz się na tylną kanapę.",
-	">>DOPISAĆ CD<<",
+	"Nie masz ochoty na kombinowanie z ubiorem. Gdy kończysz się ubierać, pod twój dom przybywa auto Staśka. Wrzucasz swoje rzeczy do środka i ładujesz się na tylną kanapę.",
+	"Stasiek ma na sobie koszulkę i jakieś krótkie spodnie. Asia jest w sukience, sięgającej do połowy łydek i ma szerokie ramiączka z dekoltem. Stasiek uśmiecha się do ciebie i stwierdza żartobliwie, że musi ci być gorąco w tych spodniach.",
 ],
 
 "Roz4C":[
-	"Pomyślałaś, że może powinnaś ich odrobinę sprowokować.",
-	"Wreszcie pod twój dom przybywa auto Staśka.",
-	"Wrzucasz swoje rzeczy do środka i ładujesz się na tylną kanapę.",
-	">>DOPISAĆ CD<<",
+	"Pomyślałaś, że może powinnaś ich odrobinę sprowokować. Gdy kończysz się ubierać, pod twój dom przybywa auto Staśka. Wrzucasz swoje rzeczy do środka i ładujesz się na tylną kanapę.",
+	"Stasiek ma na sobie koszulkę i jakieś krótkie spodnie. Asia jest w sukience, sięgającej do połowy łydek i ma szerokie ramiączka z dekoltem.  Widząc twój ubiór oboje się uśmiechają.",
+	
+	"Po chwili Aśka pyta cię czy wygodnie ci w takim stroju.",
 ],
+
+"4A1":[
+	"Oboje uśmiechają się do ciebie. Są czerwoni na twarzy. Pomimo szeroko otwartych okien, w aucie panuje upał. Stasiek mówi, że to przez popsutą klimatyzację. Jego dziewczyna marudzi, bo założyła na siebie strój kąpielowy i jest jej jeszcze bardziej gorąco. Potem dodaje, że nie może doczekać się jeziora i zimnej wody.",
+],
+
+"4A2":
+[
+"Asia potakuje, widzisz, że jest czerwona na twarzy. Stasiek mówi, że w aucie popsuła się klimatyzacja i nie zdążył jej naprawić, przez co wszystko w środku się gotuje. Jego dziewczyna marudzi, bo założyła na siebie strój kąpielowy i jest jej jeszcze bardziej gorąco. Potem dodaje, że nie może doczekać się jeziora i zimnej wody.",	
+],
+"4A3":
+[
+"s - No to zdejmij. Przecież możesz jechać w stroju kąpielowym.",
+"s - Aśka, ty też. Jest ze trzydzieści stopni...",
+"Spotykasz spojrzenie chłopaka we wstecznym lusterku. Chyba sprawdza jaka będzie Twoja reakcja.",
+"a - Ona mówiła o majtkach, Staś. Zostanie w samej bieliźnie wyklucza zdjęcie gaci.",	
+]
 
 //Koniec przedwczesny
 "fine":
