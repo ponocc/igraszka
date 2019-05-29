@@ -335,7 +335,7 @@ let script = {
 		},
 	}
 ],
-	
+
 //SUKIENKA
 "Roz4A":
 [
@@ -411,7 +411,7 @@ let script = {
 				"Do":"jump 4A5",
 			},
 		},
-	}	
+	}
 ],
 
 "4A2":
@@ -432,7 +432,9 @@ let script = {
 				"Do":"jump 4A8",
 			},
 }
+}
 ],
+
 "4A3":
 [
 "s - No to zdejmij. Przecież możesz jechać w stroju kąpielowym.",
@@ -452,7 +454,7 @@ let script = {
 		},
 	}
 ],
-	
+
 "4A4":
 [
 "s - No to kąpiesz się na golasa! Za dziesięć minut będziemy na miejscu, więc nie warto zawracać.",
@@ -475,7 +477,7 @@ let script = {
 		},
 	}
 ],
-	
+
 "4A5":
 [
 "Stasiek i Aśka reagują śmiechem na twoją deklarację.",
@@ -495,39 +497,51 @@ let script = {
 			},
 		},
 	}
-	
-],	
-	
+
+],
+
 "4A6":
 [
 	"s - No to ja zostanę na brzegu, a wy we dwie pójdziecie popływać gdzieś indziej. Może być?",
 	"Chłopak spogląda na Aśkę, jakby wyczekując jakiejś określonej reakcji. Niestety ona postanawia siedzieć cicho, uśmiechając się tylko.",
 	"s - Jezioro jest duże."
 ],
-	
+
 "4A7":
 [
 	"a - Oczywiście, kochana.",
 	"Odpowiada radośnie Aśka i odwraca się w twoją stronę.",
-	"a - Idziemy od razu do wody?",	
+	"a - Idziemy od razu do wody?",
 ],
-	
+
 "4A8":
 	[
-"s - Hej, a mojego nie chcesz oglądać? - Oburzył się nagle Staś.
-"a- Przestań. Zamierzasz wchodzić do wody? - Spytała go Aśka i odwróciła się w twoją stronę.  - On nie potrafi pływać.
+"s - Hej, a mojego nie chcesz oglądać? - Oburzył się nagle Staś.",
+"a- Przestań. Zamierzasz wchodzić do wody? On nie potrafi pływać.",
+"Asia powiedziała to z wyczuwalnym śmiechem w głosie, jednocześnie odwracając się w twoją stronę.",
+
+Choice
+- No to chyba nie popływasz z nami.
+- Szkoda, miałam wielką ochotę popływać nago. - Mówisz prowokująco.
 		],
 "4A9":
 	[
- - Fajny stanik. - Komentuje Stasiek, gdy zostajesz w samej bieliźnie. Jego partnerka zgadza się z nim. Dostrzegasz delikatny ruch jej dłoni, która przesuwa się po jej rozgrzanej szyi. Chłopak ciągle zerka na ciebie w lusterku.
+"s - Fajny stanik. - Komentuje Stasiek, gdy zostajesz w samej bieliźnie. Jego partnerka zgadza się z nim. Dostrzegasz delikatny ruch jej dłoni, która przesuwa się po jej rozgrzanej szyi. Chłopak ciągle zerka na ciebie w lusterku.",
 	],
-	
+
 "4A10":
 	[
-		
+" - Stasiek ty się chyba nigdy nago nie kąpałeś, co? - Spytała nagle Aśka. - No ale może najpierw mógłbyś się w ogóle nauczyć pływać, to byś miał więcej okazji.
+ - To że kiepsko pływam, nie znaczy, że będę unikał wody.
+ - Jasne. Ale Ida pyta, czy przypadkiem nie zapomniałeś stroju.
+ - No nie, mam go w torbie przecież... - Widzisz, że Asia zaczyna się śmiać i kręci głową.",
 	],
-	
-	
+"4A11":
+[
+" - A nie chcesz się pływać w bieliźnie? - Asia odwraca się w Twoją stronę. - Na słońcu powinna szybko wyschnąć.",
+
+],
+
 "4B1":
 //Zwykłe ciuchy
 	[
@@ -542,15 +556,15 @@ let script = {
 	[
 	"s - Jeszcze trochę i będziemy na miejscu, a wtedy... będziesz mogła wskoczyć w strój."
 	],
-	
+
 "4C3":
 	[
 	"s - No to zdejmij. Przecież możesz jechać w stroju kąpielowym.",
 	"s - Aśka, ty też. Jest ze trzydzieści stopni...",
 	"Spotykasz spojrzenie chłopaka we wstecznym lusterku. Chyba sprawdza jaka będzie Twoja reakcja.",
-	"a - Ona mówiła o majtkach, Staś. Zostanie w samej bieliźnie wyklucza zdjęcie gaci.",	
+	"a - Ona mówiła o majtkach, Staś. Zostanie w samej bieliźnie wyklucza zdjęcie gaci.",
 	],
-	
+
 //Koniec przedwczesny
 "fine":
 [
