@@ -505,6 +505,13 @@ let script = {
 	"s - No to ja zostanę na brzegu, a wy we dwie pójdziecie popływać gdzieś indziej. Może być?",
 	"Chłopak spogląda na Aśkę, jakby wyczekując jakiejś określonej reakcji. Niestety ona postanawia siedzieć cicho, uśmiechając się tylko.",
 	"s - Jezioro jest duże."
+	
+	
+- No jak Aś będzie chciała iść, to pójdę.
+ - Ale Aśki też się wstydzę! Pódję sama.
+	
+	
+	
 ],
 
 "4A7":
@@ -522,11 +529,14 @@ let script = {
 
 Choice
 - No to chyba nie popływasz z nami.
+		
 - Szkoda, miałam wielką ochotę popływać nago. - Mówisz prowokująco.
 		],
 "4A9":
 	[
 "s - Fajny stanik. - Komentuje Stasiek, gdy zostajesz w samej bieliźnie. Jego partnerka zgadza się z nim. Dostrzegasz delikatny ruch jej dłoni, która przesuwa się po jej rozgrzanej szyi. Chłopak ciągle zerka na ciebie w lusterku.",
+	Kusisz go, zsuwając jedno z ramiączek stanika.
+- Przesiądź się do tyłu. - Powiedz do Aśki cicho, przysuwając się do jej fotela uprzednio.
 	],
 
 "4A10":
@@ -535,11 +545,13 @@ Choice
  - To że kiepsko pływam, nie znaczy, że będę unikał wody.
  - Jasne. Ale Ida pyta, czy przypadkiem nie zapomniałeś stroju.
  - No nie, mam go w torbie przecież... - Widzisz, że Asia zaczyna się śmiać i kręci głową.",
+		
 	],
 "4A11":
 [
 " - A nie chcesz się pływać w bieliźnie? - Asia odwraca się w Twoją stronę. - Na słońcu powinna szybko wyschnąć.",
-
+ - Nie, bo i tak potem będę musiała latać bez majtek, dopóki nie wyschną.
+ - Szkoda mi ją moczyć, jest za fajna i ładna i w ogóle. - Odpowiadasz z lekką nieśmiałością.
 ],
 
 "4B1":
