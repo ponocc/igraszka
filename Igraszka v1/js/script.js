@@ -336,6 +336,7 @@ let script = {
 	}
 ],
 
+//SUKIENKA
 "Roz4A":
 [
 "Naprawdę lubisz tę sukienkę. Bez chwili wahania zakładasz ją na siebie. Gdy kończysz się ubierać, pod twój dom przybywa auto Staśka. Wrzucasz swoje rzeczy do środka i ładujesz się na tylną kanapę. Przyglądasz się szybko swoim towarzyszom. Stasiek ma na sobie koszulkę i jakieś krótkie spodnie. Asia też ubrała się w sukienkę, sięga jej do połowy łydek, ma szerokie ramiączka i głęboki dekolt. Chyba spodobała im się twoja sukienka, bo oboje ją chwalą.",
@@ -350,7 +351,7 @@ let script = {
 				"Text": "Podziękuj i spytaj, czy Aśce nie jest za gorąco w tak długiej sukience.",
 				"Do":"jump 4A2",
 			},
-				"4A3C": {
+				"4A3": {
 				"Text": "Powiedz, że najchętniej zdjęłabyś majtki, bo jest tak gorąco.",
 				"Do":"jump 4A3",
 			},
@@ -358,34 +359,223 @@ let script = {
 	}
 
 ],
-
+//ZWYKŁE CIUCHY
 "Roz4B":[
 	"Nie masz ochoty na kombinowanie z ubiorem. Gdy kończysz się ubierać, pod twój dom przybywa auto Staśka. Wrzucasz swoje rzeczy do środka i ładujesz się na tylną kanapę.",
 	"Stasiek ma na sobie koszulkę i jakieś krótkie spodnie. Asia jest w sukience, sięgającej do połowy łydek i ma szerokie ramiączka z dekoltem. Stasiek uśmiecha się do ciebie i stwierdza żartobliwie, że musi ci być gorąco w tych spodniach.",
+	{
+			"Choice": {
+				"4B1": {
+				"Text": "Podziękuj i pochwali ich ubiór.",
+				"Do":"jump 4B1",
+			},
+		},
+	}
 ],
-
+//WYUZDANE UBRANIE
 "Roz4C":[
 	"Pomyślałaś, że może powinnaś ich odrobinę sprowokować. Gdy kończysz się ubierać, pod twój dom przybywa auto Staśka. Wrzucasz swoje rzeczy do środka i ładujesz się na tylną kanapę.",
 	"Stasiek ma na sobie koszulkę i jakieś krótkie spodnie. Asia jest w sukience, sięgającej do połowy łydek i ma szerokie ramiączka z dekoltem.  Widząc twój ubiór oboje się uśmiechają.",
-	
 	"Po chwili Aśka pyta cię czy wygodnie ci w takim stroju.",
+	{
+			"Choice": {
+				"Dialog": "a - Wygodnie ci w takich ciuchach?",
+				"4C1": {
+				"Text": " - Oczywiście. Lubię obcisłe ciuchy.",
+				"Do":"jump 4C1",
+			},
+				"4C2": {
+				"Text": " - Z każdą kolejną minutą coraz bardziej żałuję, że nie założyłam sukienki.",
+				"Do":"jump 4C2",
+			},
+				"4C3": {
+				"Text": "Powiedz, że najchętniej zdjęłabyś majtki, bo jest tak gorąco.",
+				"Do":"jump 4C3",
+			},
+		},
+	}
 ],
 
-"4A1":[
+"4A1":
+//Sukienka
+	[
 	"Oboje uśmiechają się do ciebie. Są czerwoni na twarzy. Pomimo szeroko otwartych okien, w aucie panuje upał. Stasiek mówi, że to przez popsutą klimatyzację. Jego dziewczyna marudzi, bo założyła na siebie strój kąpielowy i jest jej jeszcze bardziej gorąco. Potem dodaje, że nie może doczekać się jeziora i zimnej wody.",
+	{
+			"Choice": {
+				"4A4": {
+				"Text": " - O rety, strój! Zapomniałam!",
+				"Do":"jump 4A4",
+			},
+				"4A5": {
+				"Text": " - Umrę ze szczęścia jak wskoczę do wody.",
+				"Do":"jump 4A5",
+			},
+		},
+	}
 ],
 
 "4A2":
 [
-"Asia potakuje, widzisz, że jest czerwona na twarzy. Stasiek mówi, że w aucie popsuła się klimatyzacja i nie zdążył jej naprawić, przez co wszystko w środku się gotuje. Jego dziewczyna marudzi, bo założyła na siebie strój kąpielowy i jest jej jeszcze bardziej gorąco. Potem dodaje, że nie może doczekać się jeziora i zimnej wody.",	
+"Asia potakuje, widzisz, że jest czerwona na twarzy. Stasiek mówi, że w aucie popsuła się klimatyzacja i nie zdążył jej naprawić, przez co wszystko w środku się gotuje. Jego dziewczyna marudzi, bo założyła na siebie strój kąpielowy i jest jej jeszcze bardziej gorąco. Potem dodaje, że nie może doczekać się jeziora i zimnej wody.",
+{
+			"Choice": {
+				"4A4": {
+				"Text": " - O kurczę, strój! Zapomniałam!",
+				"Do":"jump 4A4",
+			},
+				"4A5": {
+				"Text": " - Umrę ze szczęścia jak wskoczę do wody.",
+				"Do":"jump 4A5",
+			},
+				"4A8": {
+				"Text": " - Też się nie mogę doczekać, aż pokażesz trochę ciałka.",
+				"Do":"jump 4A8",
+			},
+}
+}
 ],
+
 "4A3":
 [
 "s - No to zdejmij. Przecież możesz jechać w stroju kąpielowym.",
 "s - Aśka, ty też. Jest ze trzydzieści stopni...",
 "Spotykasz spojrzenie chłopaka we wstecznym lusterku. Chyba sprawdza jaka będzie Twoja reakcja.",
-"a - Ona mówiła o majtkach, Staś. Zostanie w samej bieliźnie wyklucza zdjęcie gaci.",	
-]
+"a - Ona mówiła o majtkach, Staś. Zostanie w samej bieliźnie wyklucza zdjęcie gaci.",
+	{
+			"Choice": {
+				"4A9": {
+				"Text": "Zaśmiej się i po chwili zacznij się rozbierać.",
+				"Do":"jump 4A9",
+			},
+				"4A4": {
+				"Text": " - O rety, strój! Zapomniałam.",
+				"Do":"jump 4A4",
+			},
+		},
+	}
+],
+
+"4A4":
+[
+"s - No to kąpiesz się na golasa! Za dziesięć minut będziemy na miejscu, więc nie warto zawracać.",
+"Aśka wyglada na smutną, zapewne myśli, że nie będziesz chciała pływać. Stasiek dostrzega to i szybko się odzywa.",
+"s - Powinniśmy być sami, to jest odizolowane miejsce. Chyba będziesz mogła bez skrępowania zanużyć nóżki.",
+	{
+			"Choice": {
+				"4A6": {
+				"Text": " - Myślisz, że się przy tobie rozbiorę?!",
+				"Do":"jump 4A6",
+			},
+				"4A10": {
+				"Text": " - Eh... jakbyście i wy zapomnieli stroju, to bym się nie krępowała nago pływać.",
+				"Do":"jump 4A10",
+			},
+				"4A11": {
+				"Text": " - Trudno, będę tylko moczyć nóżki.",
+				"Do":"jump 4A11",
+			},
+		},
+	}
+],
+
+"4A5":
+[
+"Stasiek i Aśka reagują śmiechem na twoją deklarację.",
+"s - Tylko się nie utop.",
+"i - No bez przesady, przecież będziecie na miejscu. Chyba mnie uratujecie, prawda?",
+"Pytasz żartobliwie, a Aśka zaczyna się śmiać.",
+"a - Na niego nie ma co liczyć, bo kiepsko pływa.",
+	{
+			"Choice": {
+				"4A6": {
+				"Text": " - To chyba popływamy same.",
+				"Do":"jump 4A6",
+			},
+				"4A7": {
+				"Text": " - Ale na ciebie mogę liczyć?",
+				"Do":"jump 4A7",
+			},
+		},
+	}
+
+],
+
+"4A6":
+[
+	"s - No to ja zostanę na brzegu, a wy we dwie pójdziecie popływać gdzieś indziej. Może być?",
+	"Chłopak spogląda na Aśkę, jakby wyczekując jakiejś określonej reakcji. Niestety ona postanawia siedzieć cicho, uśmiechając się tylko.",
+	"s - Jezioro jest duże."
+	
+	
+- No jak Aś będzie chciała iść, to pójdę.
+ - Ale Aśki też się wstydzę! Pódję sama.
+	
+	
+	
+],
+
+"4A7":
+[
+	"a - Oczywiście, kochana.",
+	"Odpowiada radośnie Aśka i odwraca się w twoją stronę.",
+	"a - Idziemy od razu do wody?",
+],
+
+"4A8":
+	[
+"s - Hej, a mojego nie chcesz oglądać? - Oburzył się nagle Staś.",
+"a- Przestań. Zamierzasz wchodzić do wody? On nie potrafi pływać.",
+"Asia powiedziała to z wyczuwalnym śmiechem w głosie, jednocześnie odwracając się w twoją stronę.",
+
+Choice
+- No to chyba nie popływasz z nami.
+		
+- Szkoda, miałam wielką ochotę popływać nago. - Mówisz prowokująco.
+		],
+"4A9":
+	[
+"s - Fajny stanik. - Komentuje Stasiek, gdy zostajesz w samej bieliźnie. Jego partnerka zgadza się z nim. Dostrzegasz delikatny ruch jej dłoni, która przesuwa się po jej rozgrzanej szyi. Chłopak ciągle zerka na ciebie w lusterku.",
+	Kusisz go, zsuwając jedno z ramiączek stanika.
+- Przesiądź się do tyłu. - Powiedz do Aśki cicho, przysuwając się do jej fotela uprzednio.
+	],
+
+"4A10":
+	[
+" - Stasiek ty się chyba nigdy nago nie kąpałeś, co? - Spytała nagle Aśka. - No ale może najpierw mógłbyś się w ogóle nauczyć pływać, to byś miał więcej okazji.
+ - To że kiepsko pływam, nie znaczy, że będę unikał wody.
+ - Jasne. Ale Ida pyta, czy przypadkiem nie zapomniałeś stroju.
+ - No nie, mam go w torbie przecież... - Widzisz, że Asia zaczyna się śmiać i kręci głową.",
+		
+	],
+"4A11":
+[
+" - A nie chcesz się pływać w bieliźnie? - Asia odwraca się w Twoją stronę. - Na słońcu powinna szybko wyschnąć.",
+ - Nie, bo i tak potem będę musiała latać bez majtek, dopóki nie wyschną.
+ - Szkoda mi ją moczyć, jest za fajna i ładna i w ogóle. - Odpowiadasz z lekką nieśmiałością.
+],
+
+"4B1":
+//Zwykłe ciuchy
+	[
+	"Oboje uśmiechają się do ciebie. Są czerwoni na twarzy. Pomimo szeroko otwartych okien, w aucie panuje upał. Stasiek mówi, że to przez popsutą klimatyzację. Jego dziewczyna marudzi, bo założyła na siebie strój kąpielowy i jest jej jeszcze bardziej gorąco. Potem dodaje, że nie może doczekać się jeziora i zimnej wody.",
+	],
+"4C1":
+//Wyuzdane
+	[
+	"Oboje uśmiechają się do ciebie. Są czerwoni na twarzy. Pomimo szeroko otwartych okien, w aucie panuje upał. Stasiek mówi, że to przez popsutą klimatyzację. Jego dziewczyna marudzi, bo założyła na siebie strój kąpielowy i jest jej jeszcze bardziej gorąco. Potem dodaje, że nie może doczekać się jeziora i zimnej wody.",
+	],
+"4C2":
+	[
+	"s - Jeszcze trochę i będziemy na miejscu, a wtedy... będziesz mogła wskoczyć w strój."
+	],
+
+"4C3":
+	[
+	"s - No to zdejmij. Przecież możesz jechać w stroju kąpielowym.",
+	"s - Aśka, ty też. Jest ze trzydzieści stopni...",
+	"Spotykasz spojrzenie chłopaka we wstecznym lusterku. Chyba sprawdza jaka będzie Twoja reakcja.",
+	"a - Ona mówiła o majtkach, Staś. Zostanie w samej bieliźnie wyklucza zdjęcie gaci.",
+	],
 
 //Koniec przedwczesny
 "fine":
