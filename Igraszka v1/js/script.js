@@ -344,7 +344,7 @@ let script = {
 {
 			"Choice": {
 				"4A1": {
-				"Text": "Podziękuj i pochwali ich ubiór.",
+				"Text": "Podziękuj i pochwal ich ubiór.",
 				"Do":"jump 4A1",
 			},
 				"4A2": {
@@ -366,7 +366,7 @@ let script = {
 	{
 			"Choice": {
 				"4B1": {
-				"Text": "Podziękuj i pochwali ich ubiór.",
+				"Text": "Podziękuj i skomplementuj ich ubiór.",
 				"Do":"jump 4B1",
 			},
 		},
@@ -505,32 +505,44 @@ let script = {
 	"s - No to ja zostanę na brzegu, a wy we dwie pójdziecie popływać gdzieś indziej. Może być?",
 	"Chłopak spogląda na Aśkę, jakby wyczekując jakiejś określonej reakcji. Niestety ona postanawia siedzieć cicho, uśmiechając się tylko.",
 	"s - Jezioro jest duże."
-	
-	
-- No jak Aś będzie chciała iść, to pójdę.
- - Ale Aśki też się wstydzę! Pódję sama.
-	
-	
-	
+	{
+			"Choice": {
+				"4A12": {
+				"Text": " - No jak Aśka będzie chciała iść, to pójdę.",
+				"Do":"jump 4A12",
+			},
+				"4A13": {
+				"Text": " - Ale Aśki też się wstydzę! Pódję sama.",
+				"Do":"jump 4A13",
+			},
+		},
+	}
 ],
 
 "4A7":
 [
 	"a - Oczywiście, kochana.",
-	"Odpowiada radośnie Aśka i odwraca się w twoją stronę.",
+	"Odpowiada radośnie i odwraca się w twoją stronę.",
 	"a - Idziemy od razu do wody?",
 ],
 
 "4A8":
 	[
 "s - Hej, a mojego nie chcesz oglądać? - Oburzył się nagle Staś.",
-"a- Przestań. Zamierzasz wchodzić do wody? On nie potrafi pływać.",
+"a - Przestań. Zamierzasz wchodzić do wody? On nie potrafi pływać.",
 "Asia powiedziała to z wyczuwalnym śmiechem w głosie, jednocześnie odwracając się w twoją stronę.",
-
-Choice
-- No to chyba nie popływasz z nami.
-		
-- Szkoda, miałam wielką ochotę popływać nago. - Mówisz prowokująco.
+{
+		"Choice": {
+			"4A14": {
+			"Text": " - No to chyba nie popływasz z nami.",
+			"Do":"jump 4A14",
+		},
+			"4A15": {
+			"Text": " - Szkoda, miałam wielką ochotę popływać nago.",
+			"Do":"jump 4A15",
+		},
+	},
+}
 		],
 "4A9":
 	[
@@ -541,24 +553,91 @@ Choice
 
 "4A10":
 	[
-" - Stasiek ty się chyba nigdy nago nie kąpałeś, co? - Spytała nagle Aśka. - No ale może najpierw mógłbyś się w ogóle nauczyć pływać, to byś miał więcej okazji.
- - To że kiepsko pływam, nie znaczy, że będę unikał wody.
+"a - Stasiek ty się chyba nigdy nago nie kąpałeś, co? - Spytała nagle Aśka. - No ale może najpierw mógłbyś się w ogóle nauczyć pływać, to byś miał więcej okazji.",
+"s - To że kiepsko pływam, nie znaczy, że będę unikał wody.",
  - Jasne. Ale Ida pyta, czy przypadkiem nie zapomniałeś stroju.
  - No nie, mam go w torbie przecież... - Widzisz, że Asia zaczyna się śmiać i kręci głową.",
-		
+
+1. - Może zgubiłeś go po drodze?
+2. - No to ja pójdę sama z Aś.
 	],
 "4A11":
 [
-" - A nie chcesz się pływać w bieliźnie? - Asia odwraca się w Twoją stronę. - Na słońcu powinna szybko wyschnąć.",
- - Nie, bo i tak potem będę musiała latać bez majtek, dopóki nie wyschną.
- - Szkoda mi ją moczyć, jest za fajna i ładna i w ogóle. - Odpowiadasz z lekką nieśmiałością.
+"a - A nie chcesz pływać w bieliźnie? - Asia odwraca się w Twoją stronę. - Na słońcu powinna szybko wyschnąć.",
+Choice
+" - Nie, bo i tak potem będę musiała latać bez majtek, dopóki nie wyschną.",
+" - Szkoda mi ją moczyć, jest za fajna i ładna i w ogóle. - Odpowiadasz z lekką nieśmiałością.",
 ],
+
+
+"4A12":
+[
+"a	- Yyy... No możemy pójść, mi to nie przeszkadza. A nie chcesz się pływać w bieliźnie? Na słońcu powinna szybko wyschnąć.",
+"Asia odwraca się w twoją stronę. Jej twarz jest wilgotna od potu, błyszczy się w słońcu.",
+
+
+],
+"4A13":
+[
+"a - Nie musisz się mnie wstydzić, przestań.",
+"Jej głos jest delikatny, brzmi niewinnie.",
+
+],
+"4A14":
+[
+"s	 - To że kiepsko pływam, nie znaczy, że będę unikał wody.",
+"a - Jasne. Wypłyniemy z Idą na środek jeziora, a ty zostaniesz przy brzegu.",
+"s - No i ciekawe co będziecie tam robić...",
+"Widzisz, że Asia zaczyna się śmiać i kręci głową.",
+
+
+],
+
+"4A15":
+[
+"a - Stasiek ty się chyba nigdy nago nie kąpałeś, co? Choć najpierw musiałbyś się w ogóle nauczyć pływać, to byś miał więcej okazji.",
+"a - Jasne. Wypłyniemy z Idą na środek jeziora, a ty zostaniesz przy brzegu.",
+"s - No i ciekawe co będziecie tam robić...",
+"Widzisz, że Asia zaczyna się śmiać i kręci głową.",
+
+
+],
+
+"4A16":
+[
+"			",
+
+
+],
+"4A17":
+[
+"			",
+
+
+],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 "4B1":
 //Zwykłe ciuchy
 	[
 	"Oboje uśmiechają się do ciebie. Są czerwoni na twarzy. Pomimo szeroko otwartych okien, w aucie panuje upał. Stasiek mówi, że to przez popsutą klimatyzację. Jego dziewczyna marudzi, bo założyła na siebie strój kąpielowy i jest jej jeszcze bardziej gorąco. Potem dodaje, że nie może doczekać się jeziora i zimnej wody.",
 	],
+
+
 "4C1":
 //Wyuzdane
 	[
