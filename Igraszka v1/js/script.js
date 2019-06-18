@@ -107,6 +107,10 @@ let script = {
 					"Text": "Fantazjujesz o wspólnym wypadzie, ale ostatecznie zmieniasz temat.",
 					"Do": "jump 3"
 				},
+				"Szybki Wątek Test":{
+				"Text": "Szybki Wątek Test",
+				"Do": "jump 4A9"
+			},
 			}
 		}
 	],
@@ -693,7 +697,9 @@ let script = {
 },
 ],
 
-//Szybki wątek?
+//Szybki wątek
+
+
 //Stas
 "4A16":
 [
@@ -729,8 +735,6 @@ let script = {
 	},
 },
 ],
-
-
 
 "4A28":
 [
@@ -780,8 +784,6 @@ let script = {
 		},
 	},
 },
-
-
 ],
 
 "4A28-3":[
@@ -823,24 +825,43 @@ let script = {
 "i - Oho, chyba ktoś jest niezaspokojony. - Mówisz złośliwie.",
 "Stasiek spogląda na ciebie gwałtownie. Wzrok jego dziewczyny błyskawicznie ląduje na jego kroczu, a następnie wędruje na tylną kanapę.",
 "a - A wy co, nie możecie się doczekać?",
-11. - Miałabyś coś przeciwko, gdybym zechciała użyć... Twojego faceta?
-12. - Co poradzę, mam na was ochotę.
+{
+		"Choice": {
+			"4A28-11": {
+			"Text": " - Mogę użyć twojego faceta?",
+			"Do":"jump 4A28-11",
+		},
+			"4A28-12": {
+			"Text": " - Mam na was ochotę.",
+			"Do":"jump 4A28-12",
+		},
+	},
+},
 ],
 
 "4A28-6":
 [
 "Chłopak odpowiada na twoje mrugnięcie uśmiechem. Dziesięć minut później docieracie na miejsce. Jest to nieduża polanka, do której prowadzi mało uczęszczana, leśna droga. 'Plaża' to jest po prostu kilka metrów brzegu bez trzciny.",
 "a - Znaleźliśmy to miejsce na jakimś forum, wygląda trochę inaczej niż na fotkach. - Odzywa się Aśka, gdy parkujecie. Stasiek wyciąga rzeczy z bagażnika, cały czas się uśmiechając. Następnie wybieracie miejsce na namioty.",
-13. Idziesz z Aśką zobaczyć jaka jest woda.
-14. Zostajesz przy aucie i próbujesz rozstawić namiot.
-
+{
+		"Choice": {
+			"4A28-13": {
+			"Text": "Idziesz z Aśką zobaczyć jaka jest woda.",
+			"Do":"jump 4A28-13",
+		},
+			"4A28-14": {
+			"Text": "Zostajesz przy aucie i próbujesz rozstawić namiot.",
+			"Do":"jump 4A28-14",
+		},
+	},
+},
 ],
 
 "4A28-7":
 [
 "Instynktownie przesuwasz prawą dłoń w dół, pod krawędź skąpych majtek. Czujesz pulsujące ciepło i jeszcze bardziej się rozluźniasz. Wiercisz się odrobinę w miejscu, otwierasz szerzej usta i wzdychasz cicho. Po krótkiej chwili przyjemności otwierasz oczy i spoglądasz w lusterko. Staś cały czas ci się przygląda. Nagle Aśka krzyczy.",
 "a - Uważaj!",
-"Wypadacie z drogi. Auto zatrzymuje się na drzewie. Gaśnie światło.",
+"Wypadacie z drogi. Auto zatrzymuje się na drzewie. Gaśnie światło.", //KONIEC
 "jump fine",
 ],
 
@@ -849,8 +870,18 @@ let script = {
 "Asia odwraca się w twoją stronę. Ma surowy wyraz twarzy.",
 "a - Dobrze się bawisz?",
 "Nadal masz odsłoniety biust. Dziewczyna przygląda ci się uważnie, jakby chciała samym spojrzeniem odkryć i zrozumieć twoje zamiary.",
-15. - Wyśmienicie. - Powiedz i zasłoń cycki ręką.
-16. - Chętnie pobawiłabym się z tobą. - Rzuć zalotnie, przechyl się do przodu i zbliż swoją twarz do jej twarzy.
+{
+		"Choice": {
+			"4A28-15": {
+			"Text": " - Wyśmienicie.",
+			"Do":"jump 4A28-15",
+		},
+			"4A28-16": {
+			"Text": " - Chętnie pobawiłabym się z tobą.",
+			"Do":"jump 4A28-16",
+		},
+	},
+},
 ],
 
 "4A28-9":[
@@ -859,76 +890,323 @@ let script = {
 "W tym momencie przesuwasz palcem, chwytasz krawędź stanika i zsuwasz go całkowicie w dół, eksponując biust.",
 "i - Ja się was nie krępuję.",
 "Mówisz śmiało, lekko chichocząc. Aśka delikatnie odwraca się w twoją stronę i gdy zauważa twoje nagie piersi, natychmiast się płoszy.",
-17. Stasiek chciałby popatrzeć też na twoje cycki. I ja też bym chciała.
-18. Podobają ci się moje maleństwa?
-19. Przesiądź się do tyłu.
-
+{
+		"Choice": {
+			"4A28-17": {
+			"Text": " - Stasiek popatrzyłby też na twoje cycki. Ja też bym popatrzyła.",
+			"Do":"jump 4A28-17",
+		},
+			"4A28-18": {
+			"Text": " - Podobają ci się moje maleństwa?",
+			"Do":"jump 4A28-18",
+		},
+		"4A28-19": {
+		"Text": " - Przesiądź się do tyłu.",
+		"Do":"jump 4A28-19",
+	},
+	},
+},
 ],
 
-
-"4A28-10":[
+"4A28-10":
+[
 "i - To chociaż rozbierz Staśka, bo zaraz eksploduje.",
-
+"Aśka spogląda gwałtownie na swojego chłopaka, dokładnie przyglądając się jego ciału. Na jej twarzy szybko maluje się zdenerwowanie. Następnie szybko odwraca się w twoją stronę. Ma surowy wyraz twarzy.",
+"a - Dobrze się bawisz?",
+"Wciąż masz nieco odsłoniety biust. Dziewczyna przygląda ci się uważnie, jakby chciała samym spojrzeniem odkryć i zrozumieć twoje zamiary.",
+{
+		"Choice": {
+			"4A28-15": {
+			"Text": " - Wyśmienicie.",
+			"Do":"jump 4A28-15",
+		},
+			"4A28-16": {
+			"Text": " - Chętnie pobawiłabym się z tobą.",
+			"Do":"jump 4A28-16",
+		},
+	},
+},
 ],
-
-
-
-4A28-11
+"4A28-11":
+[
 "i - Miałabyś coś przeciwko, gdybym zechciała użyć... Twojego faceta?",
 "a - Pojebało cię?",
+{
+		"Choice": {
+			"4A28-20": {
+			"Text": " - Mogłabyś popatrzeć... Albo dołaczyć.",
+			"Do":"jump 4A28-20",
+		},
+			"4A28-21": {
+			"Text": "Przeproś.",
+			"Do":"jump 4A28-21",
+		},
+	},
+},
+],
 
-4A28-12
-"i - Nic na to nie poradzę, mam na was ochotę.",
+"4A28-12":
+[
+"i - Nic na to nie poradzę, że mam na was ochotę.",
 "Przez moment wnętrze auta wypełnia jedynie odgłos szumiącego powietrza, wpadającego przez otwarte do maksimum okna. Wreszcie Aśka zabiera głos. Wygląda na to, że jest lekko zirytowana.",
+"s - Może... Postaraj się wytrzymać jeszcze tych kilka minut, aż dojedziemy na miejsce...",
+"a - I wtedy co? Zamierzacie się bzykać?",
+"s - Jezu, nie o to mi chodziło!",
+{
+		"Choice": {
+			"4A28-22": {
+			"Text": " - Chcę was oboje. Teraz.",
+			"Do":"jump 4A28-22",
+		},
+			"4A28-23": {
+			"Text": " - Spokojnie.",
+			"Do":"jump 4A28-23",
+		},
+	},
+},
+],
 
-4A28-13
-z aśką nad wodą (topisz ją albo podrywasz)
 
-4A28-14
-ze stasiem przy namiotach
+//z aśką nad wodą (topisz ją albo podrywasz)
+//wariacja głównego wątku
+"4A28-13":
+[
+"Ciąg dalszy nastąpi. Tu będzie wariacja głównego wątku.",
+"end",
+],
 
-4A28-15
+//Ze Staśkiem przy namiotach
+//Wariacja wątku zdrady
+
+"4A28-14":
+[
+"Ciag dalszy nastąpi. Tu będzie wariacja wątku zdrady  stasiem przy namiotach",
+"end",
+],
+
+"4A28-15":
+[
+"i - Wyśmienicie.  - Powiedz i zasłoń cycki ręką.",
 "a - Jesteś jakaś pojebana?",
 "Pyta cicho, po czym odwraca się z powrotem w kierunku jazdy. Jedziecie przez chwilę w ciszy, po czym Staś nagle zabiera głos.",
 "s - Może jest jebnięta, ale ma fajne cycki.",
-
-1 - Dziękuję. Widziałam, że ci się podobają.
-2 - Aśka ma fajniejsze.
-
-"4A28-16":[
+{
+		"Choice": {
+			"4A28-24": {
+			"Text": " - Dziękuję. Widziałam, że ci się podobają.",
+			"Do":"jump 4A28-24",
+		},
+			"4A28-25": {
+			"Text": " - Aśka ma fajniejsze.",
+			"Do":"jump 4A28-25",
+		},
+	},
+},
+],
+"4A28-16":
+[
 "i - Chętnie pobawiłabym się z tobą.",
 "Rzucasz zalotnie, przechylając się do przodu i zbliżając swoją twarz do jej twarzy.",
 "a - Zatrzymaj się.",
-"Stasiek gwałtownie hamuje i zjeżdża na pobocze. Wszędzie dookoła jest las.",
-"a - Dalej z nią nie jadę. - Mówi opryskliwie Aśka. - Niech wysiada.",
+"Stasiek gwałtownie hamuje i zjeżdża na pobocze. Jesteście w środku lasu.",
+"a - Dalej z nią nie jadę. - Mówi opryskliwie Aśka. - Niech wysiada.", //KONIEC
 "jump fine",
 ],
 
 
-4A28-17
-"i - Stasiek chciałby popatrzeć też na twoje cycki. I ja też bym chciała.",
+"4A28-17":
+[
+"Po krótkiej chwili milczenia w napięciu, postanawiasz posunąć się o krok dalej. Spoglądasz we wsteczne lusterko i nawiązujesz kontakt wzrokowy ze Staśkiem.",
+"i - Stasiek może patrzeć na twoje cycki codziennie. Ja nigdy nie miała okazji. Wydaje mi się, że oboje chcielibyśmy na ciebie popatrzeć.",
+"Aśka wzdycha cicho i zaczyna się delikatnie śmiać.",
+"a - Czasami nie wiem, czy on w ogóle chce na mnie patrzeć.",
+"i - Ja od zawsze chciałam.",
+"s - Nie możesz poczekać tych kilku minut, aż dojedziemy na miejsce?",
+	{
+			"Choice": {
+				"4A28-26": {
+				"Text": " - Mogę.",
+				"Do":"jump 4A28-26",
+			},
+				"4A28-23": {
+				"Text": " - Nie. Chcę was oboje. Teraz.",
+				"Do":"jump 4A28-23",
+			},
+		},
+	},
+],
 
-
-
-4A28-18
+"4A28-18":
+[
 "i - Podobają ci się moje maleństwa?",
-ściskasz je mocno, jednocześnie składając usta jakby do pocałunku.
+"Ściskasz mocno swoje piersi, jednocześnie składając usta jakby do pocałunku.",
+"a - Tak... Tak, masz, um... - Widzisz, że dziewczyna jest lekko zawstydzona.",
+"s - Są bardzo zgrabne.",
+"a - Nie wiedziałam, że jesteś taka bezwstydna.",
+"Rzuca po chwili dziewczyna, odwracając ponownie głowę w twoją stronę. Tym razem zrobiła to śmielej, bardziej zdecydowany sposób, jakby w ciągu tej krótkiej chwili udało jej się opanować początkowe zaskoczenie i skrępowanie.",
+	{
+			"Choice": {
+				"4A28-27": {
+				"Text": " - Podobam ci się taka?",
+				"Do":"jump 4A28-27",
+			},
+				"4A28-28": {
+				"Text": " - Pokażesz mi swoje?",
+				"Do":"jump 4A28-28",
+			},
+		},
+	},
+],
 
 4A28-19
+[
 "i - Aśka... Przesiądź się do tyłu.",
-"Mowisz to zaskakująco dominującym tonem.",
+"Mowisz to zaskakująco dominującym tonem, jednocześnie przesuwając się do przodu, by być bliżej jej fotela. Aśka odwraca się i patrzy na ciebie przez moment. Następnie kiwa z uśmiechem głową i prosi by Stasiek zatrzymał auto. Auto zatrzymuje się na poboczu i po chwili dziewczyna siada obok ciebie na tylniej kanapie. Chłopak nie odzywa się słowem, tylko ciągle zerka w lusterko.",
+{
+		"Choice": {
+			"4A28-": {
+			"Text": " - No wyskakuj z sukienki.",
+			"Do":"jump 4A28-",
+		},
+			"4A28-": {
+			"Text": " - Pokażesz mi swój strój?",
+			"Do":"jump 4A28-",
+		},
+	},
+},
+],
 
-4A28-20
+"4A28-20":
+[
+"i - Mogłabyś popatrzeć... Albo dołaczyć.",
+"a - Chyba śnisz. Stasiek, zatrzymaj się.",
+"Stasiek gwałtownie hamuje i zjeżdża na pobocze. Jesteście w środku lasu.",
+"a - Dalej z nią nie jadę. - Mówi opryskliwie Aśka. - Niech wysiada.", //KONIEC
+"jump fine",
+],
+
+"4A28-21":
+[
+"i - Przepraszam. Poniosło mnie.",
+"Natychmiast zmieniasz swoje nastawienie, zasłaniasz swoje ciało sukienką i spuszczasz wzrok.",
+"a - Dobrze się czujesz? Co ci strzeliło do głowy, rzucać takie komentarze?",
+	{
+			"Choice": {
+				"4A28- ": {
+				"Text": " ",
+				"Do":"jump 4A28-",
+			},
+				"4A28-": {
+				"Text": " ",
+				"Do":"jump 4A28-",
+			},
+		},
+	},
+],
+
+"4A28-22":
+[
+"i - Chcę was oboje. Teraz.",
+"Mówisz to i przez krótki moment w powietrzu wisi ciężkie, nieokreślone napięcie. Wreszcie Aśka odzywa się głośno.",
+"a - Stasiek, zatrzymaj się.",
+"Stasiek gwałtownie hamuje i zjeżdża na pobocze. Jesteście w środku lasu.",
+"a - Dalej z nią nie jadę. - Mówi opryskliwie Aśka. - Niech wysiada.", //KONIEC
+"jump fine",
+],
+
+4A28-23
+
+"i - Spokojnie, Aśka. "
+
+4A28-24
+"i - Dziękuję. Widziałam, że ci się podobają.",
+"a - Może się zatrzymamy i się wyruchacie, co?",
+
+4A28-25
+"i - Aśka ma fajniejsze.",
+"a - Przestań, nie mam. Jesteś zajebiśćie szczupła i w ogóle.",
+
+"4A28-26":
+[
+	"i - Mogę poczekać.",
+"Mówisz spokojnie, z lekkim zawstydzeniem w głosie.",
+"a - Ale co wtedy? Na co ona ma czekać?",
+"s - Zobaczymy, no chciałbym, żeby się wstrzymała ze wszystkim, aż dotrzemy na miejsce.",
+"Dziewczyna spogląda na swojego chłopaka, a potem na ciebie. Ma niepewny, podejrzliwy wzrok.",
+"a - Wy coś kombinujecie?",
+{
+		"Choice": {
+			"4A28- ": {
+			"Text": " ",
+			"Do":"jump 4A28-",
+		},
+			"4A28-": {
+			"Text": " ",
+			"Do":"jump 4A28-",
+		},
+	},
+},
+],
+
+
+"4A28-27"
+i - Podobam ci się taka? Bezwstydna?
+
+"4A28-28"
+
+i - Pokażesz mi swoje?
+Pytasz z uśmiechem.
+a - Ale co?
+i - No cycki!
+Niemal to wykrzykujesz z entuzjazmem. Śmiejąc się, przesuwasz się do przodu i kładziesz delikatnie dłoń na ramieniu Aśki.
+a - No może jak dojedziemy na miejsce, to wtedy się poopalam, topless.
+
+1. - Teraz.
+2. - Tylko się poopalasz?
+3. - No dobra.
+
+"4A28-29"
+
+4A28-30
+4A28-31
+4A28-32
+4A28-33
+4A28-34
+4A28-35
+4A28-36
+4A28-37
+4A28-38
+4A28-39
+
+4A28-40
+
+
+
+
 
 4A28-
-4A28-
-4A28-
-4A28-
-4A28-
-4A28-
 
 
 
+
+
+
+
+
+
+
+	{
+			"Choice": {
+				"4A28- ": {
+				"Text": " ",
+				"Do":"jump 4A28-",
+			},
+				"4A28-": {
+				"Text": " ",
+				"Do":"jump 4A28-",
+			},
+		},
+	},
 
 
 
@@ -939,11 +1217,11 @@ ze stasiem przy namiotach
 		"Choice": {
 			"4A29-1": {
 			"Text": "Kusisz go dalej.",
-			"Do":"jump 4A28-1",
+			"Do":"jump 4A29-1",
 		},
 			"4A29-2": {
 			"Text": " - Skup się lepiej na drodze!",
-			"Do":"jump 4A28-2",
+			"Do":"jump 4A29-2",
 		},
 	},
 },
@@ -951,8 +1229,14 @@ ze stasiem przy namiotach
 
 "4A29-1":[
 "Wkładasz palec wskazujący do ust i ssiesz go przez dłuższy moment, wciaż utrzymując kontakt wzrokowy ze Stasiem. Następnie dotykasz mokrym palcem lewego sutka. Szybko twardnieje pod wpływem delikatnej pieszczoty.",
-
-
+{
+		"Choice": {
+			"4A29-3": {
+			"Text": "Kusisz go dalej.",
+			"Do":"jump 4A29-3",
+		},
+	},
+},
 
 ],
 
@@ -962,18 +1246,43 @@ ze stasiem przy namiotach
 "Chłopak odpowiada szybko. Aśka ogląda się do tyłu i robi przesadnie zaskoczoną minę. Nie jesteś pewna czy jest zdenerowana, zmęczona czy rozczarowana.",
 "a - Może zjedziemy na bok i zaliczycie sobie szybki numerek co, moi drodzy?",
 "Gorycz jej słów brzmi żartobliwie.",
-
+4. - Chętnie na was popatrzę.
+5. - Stasiek więcej nie wytrzyma.
 
 
 ],
 
+"4A29-3":
+[
+"Instynktownie przesuwasz prawą dłoń w dół, pod krawędź skąpych majtek. Czujesz pulsujące ciepło i jeszcze bardziej się rozluźniasz. Wiercisz się odrobinę w miejscu, otwierasz szerzej usta i wzdychasz cicho. Po krótkiej chwili przyjemności otwierasz oczy i spoglądasz w lusterko. Staś cały czas ci się przygląda. Nagle Aśka krzyczy:",
+"a - Uważaj!",
+"Wypadacie z drogi. Auto zatrzymuje się na drzewie. Gaśnie światło.",
+"jump fine", //KONIEC
+],
 
+4A29-4
+"i - Możemy stanąć, chętnie popatrzę jak się za ciebie bierze.",
+4A29-5
+"i - Możemy stanąć, Stasiek chyba więcej nie wytrzyma.",
+4A29-
+4A29-
 
 
 "4A30":
 [
 "Aśka zaczyna się śmiać. Patrzy na ciebie przez chwilę badawczo, jakby chciała się upewnić czy tylko żartujesz, czy jesteś poważna. Wreszcie unosi się lekko, rozpina sukienkę i zsuwa ją z siebie.",
-
+{
+		"Choice": {
+			"4A  ": {
+			"Text": " ",
+			"Do":"jump 4A  ",
+		},
+			"4A  ": {
+			"Text": " ",
+			"Do":"jump 4A  ",
+		},
+	},
+},
 Pomóż jej ściągnąć ubranie.
 
 Przyglądaj się z uśmiechem.
