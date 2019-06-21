@@ -721,7 +721,7 @@ let script = {
 "4A17":
 [
 "i - Przesiądź się do tyłu.",
-"Mówisz do Aśki cicho, jednocześnie przesuwając się do przodu, by być bliżej jej fotela. Aśka odwraca się i patrzy na ciebie przez moment. Następnie kiwa z uśmiechem głową i prosi by Stasiek zatrzymał auto. Auto zatrzymuje się na poboczu i po chwili dziewczyna siada obok ciebie na tylniej kanapie. Chłopak nie odzywa się słowem, tylko ciągle zerka w lusterko.",
+"Mówisz do Aśki cicho, jednocześnie przesuwając się do przodu, by być bliżej jej fotela. Aśka odwraca się i patrzy na ciebie przez moment. Wygląda na lekko zmieszaną, ale mimo to kiwa z uśmiechem głową i prosi by Stasiek zatrzymał auto. Samochód zatrzymuje się na poboczu i po chwili dziewczyna siada obok ciebie na tylniej kanapie. Chłopak nie odzywa się słowem, tylko ciągle zerka w lusterko.",
 {
 		"Choice": {
 			"4A30": {
@@ -887,8 +887,8 @@ let script = {
 "4A28-9":[
 "i - Mogłabyś paradować bez stanika.",
 "a - Daj spokój, nie chcę cię krępować.",
-"W tym momencie przesuwasz palcem, chwytasz krawędź stanika i zsuwasz go całkowicie w dół, eksponując biust.",
-"i - Ja się was nie krępuję.",
+"W tym momencie przesuwasz palec, chwytasz krawędź stanika i zsuwasz go całkowicie w dół, eksponując biust.",
+"i - Ja was się nie krępuję.",
 "Mówisz śmiało, lekko chichocząc. Aśka delikatnie odwraca się w twoją stronę i gdy zauważa twoje nagie piersi, natychmiast się płoszy.",
 {
 		"Choice": {
@@ -1058,19 +1058,19 @@ let script = {
 	},
 ],
 
-4A28-19
+"4A28-19":
 [
 "i - Aśka... Przesiądź się do tyłu.",
-"Mowisz to zaskakująco dominującym tonem, jednocześnie przesuwając się do przodu, by być bliżej jej fotela. Aśka odwraca się i patrzy na ciebie przez moment. Następnie kiwa z uśmiechem głową i prosi by Stasiek zatrzymał auto. Auto zatrzymuje się na poboczu i po chwili dziewczyna siada obok ciebie na tylniej kanapie. Chłopak nie odzywa się słowem, tylko ciągle zerka w lusterko.",
+"Mowisz to zaskakująco dominującym tonem, jednocześnie przesuwając się do przodu, by być bliżej jej fotela. Aśka odwraca się i patrzy na ciebie przez moment. Następnie kiwa z uśmiechem głową i prosi by Stasiek zatrzymał auto. Samochód zatrzymuje się na poboczu i po chwili dziewczyna siada obok ciebie na tylniej kanapie. Chłopak nie odzywa się słowem, tylko ciągle zerka w lusterko.",
 {
 		"Choice": {
-			"4A28-": {
+			"4A28-29": {
 			"Text": " - No wyskakuj z sukienki.",
-			"Do":"jump 4A28-",
+			"Do":"jump 4A28-29",
 		},
-			"4A28-": {
+			"4A28-30": {
 			"Text": " - Pokażesz mi swój strój?",
-			"Do":"jump 4A28-",
+			"Do":"jump 4A28-30",
 		},
 	},
 },
@@ -1092,13 +1092,13 @@ let script = {
 "a - Dobrze się czujesz? Co ci strzeliło do głowy, rzucać takie komentarze?",
 	{
 			"Choice": {
-				"4A28- ": {
-				"Text": " ",
-				"Do":"jump 4A28-",
+				"4A28-31": {
+				"Text": "Spróbuj się wytłumaczyć.",
+				"Do":"jump 4A28-31",
 			},
-				"4A28-": {
-				"Text": " ",
-				"Do":"jump 4A28-",
+				"4A28-32": {
+				"Text": "Zawstydź się.",
+				"Do":"jump 4A28-32",
 			},
 		},
 	},
@@ -1114,17 +1114,49 @@ let script = {
 "jump fine",
 ],
 
-4A28-23
+"4A28-23":
+[
+"i - Spokojnie, Aśka.",
+"Dziewczyna wygląda na zirytowaną, przygląda się tobie uważnie, a następnie odwraca głowę i kieruje wzrok za okno. Jedziecie przez dłuższy moment w ciszy.",
+"i - Przepraszam. Po prostu... bardzo mi się podobacie.",
+"a - Dobra, weź już lepiej nic nie mów.",
+{
+		"Choice": {
+			"4A28-33": {
+			"Text": "Nie odzywasz się.",
+			"Do":"jump 4A28-33",
+		},
+			"4A28-34": {
+			"Text": "Zaczynasz się tłumaczyć.",
+			"Do":"jump 4A28-34",
+		},
+	},
+},
 
-"i - Spokojnie, Aśka. "
-
-4A28-24
+],
+"4A28-24":
+[
 "i - Dziękuję. Widziałam, że ci się podobają.",
 "a - Może się zatrzymamy i się wyruchacie, co?",
+{
+		"Choice": {
+			"4A28-35": {
+			"Text": " - Zatrzymaj się.",
+			"Do":"jump 4A28-35",
+		},
+			"4A28-36": {
+			"Text": " - Chcę na was popatrzeć.",
+			"Do":"jump 4A28-36",
+		},
+	},
+},
+],
 
-4A28-25
+"4A28-25":
 "i - Aśka ma fajniejsze.",
 "a - Przestań, nie mam. Jesteś zajebiśćie szczupła i w ogóle.",
+
+
 
 "4A28-26":
 [
@@ -1137,11 +1169,11 @@ let script = {
 {
 		"Choice": {
 			"4A28- ": {
-			"Text": " ",
+			"Text": " - Tak, trójkącik.",
 			"Do":"jump 4A28-",
 		},
 			"4A28-": {
-			"Text": " ",
+			"Text": " - W życiu!",
 			"Do":"jump 4A28-",
 		},
 	},
@@ -1159,21 +1191,67 @@ Pytasz z uśmiechem.
 a - Ale co?
 i - No cycki!
 Niemal to wykrzykujesz z entuzjazmem. Śmiejąc się, przesuwasz się do przodu i kładziesz delikatnie dłoń na ramieniu Aśki.
-a - No może jak dojedziemy na miejsce, to wtedy się poopalam, topless.
+a - No może jak dojedziemy na miejsce, to wtedy się poopalam. Topless.
 
 1. - Teraz.
 2. - Tylko się poopalasz?
 3. - No dobra.
 
 "4A28-29"
+i - Wyskakuj z sukienki.
 
 4A28-30
+i - Pokaż mi swój strój
+
 4A28-31
+Spróbuj się wytłumaczyć.
+i - Bo... ja od bardzo dawna o was myślę. Jestem...
+Przerywasz na chwilę, spoglądasz na moment na twarz Aśki a następnie szybko uciekasz wzrokiem za okno.
+i - Nie byłam od dawna, z kimś, w łóżku. Ciągle o was myślę.
+generalnie smutne tony
+osłaniaasz swoje ciało, bo jesteś naga
 4A28-32
+Zawstydzasz się, kurczowo osłaniając swoje ciało. Jest ci głupio, czujesz się podle, najchętniej byś wysiadła. Powtarzasz kilka razy przepraszam, widzisz niezadowoloenie i złość na twarzy Aśki.
+
+Resztę drogi pokonujecie w milczeniu.
+jump na miejscu
 4A28-33
+Resztę drogi pokonujecie w milczeniu.
+Jump na miejscu.
+
 4A28-34
+
+"Ignorujesz jej prośbę i mimo wszystko postanawiasz się odezwać.",
+"i - Po prostu... ciągle o was myślę. Chce was rozebrać i pieprzyć się z wami nad brzegiem jeziora, wylizać ciebie i patrzeć jak on cię rucha od tyłu"
+
+jum fine
+
 4A28-35
+"i - Zatrzymaj się.",
+"Stasiek wygląda na zdezorietnowanego, spogląda we wsteczne lusterko, a potem na Aśkę, szukając najpewniej jakiegoś wytłumaczenia.",
+"a - No stajesz czy nie?",
+"i - Zaraz pewnie stanie.",
+"Zaczynasz głośno chichotać. Auto zatrzymuje się na poboczu.",
+"s - I co teraz?",
+
+1. - Teraz cię wyruchamy.
+2. - Teraz wyruchaj mnie.
+3. - Teraz wyruchaj Aśkę.
+
 4A28-36
+"i - Chcę na was popatrzeć.",
+"Twoje słowa wywołują niepewność w towaryszach twojej podróży.",
+"s - No przecież patrzysz cały czas.",
+"Aśka wzdycha głęboko i potrząsa głową.",
+"i - Ja chcę zobaczyć jak się bzykacie.",
+"Stasiek robi zaskoczoną minę. Samochód odczuwalnie zwalnia, a atmosfera w środku robi się jeszcze bardziej napięta. Po chwili cicho odzywa się Aśka.",
+"a - Będziesz... tylko patrzeć.",
+
+1. - Tak.
+(Dłuższa chwila milczenia, po czym Aśka mówi, że się zgadza, ale ma jeden warunek, że zrobią to po zmroku, przy świetle ogniska i wszyscy muszą być nadzy.),
+
+2. - Jeśli pozwolicie mi dołączyć. ( - Jeśli chcecie, mogę dołączyć.) Asia mówi że nie chce abyś dołaczała i że musi to przemyśleć. Docieracie na miejsce.
+
 4A28-37
 4A28-38
 4A28-39
