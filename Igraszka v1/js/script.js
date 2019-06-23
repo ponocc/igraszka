@@ -980,7 +980,7 @@ let script = {
 
 "4A28-14":
 [
-"Ciag dalszy nastąpi. Tu będzie wariacja wątku zdrady  stasiem przy namiotach",
+"Ciag dalszy nastąpi. Tu będzie wariacja wątku zdrady stasiem przy namiotach",
 "end",
 ],
 
@@ -1153,14 +1153,20 @@ let script = {
 ],
 
 "4A28-25":
+[
 "i - Aśka ma fajniejsze.",
 "a - Przestań, nie mam. Jesteś zajebiśćie szczupła i w ogóle.",
-
-
+"Śmiejesz się cicho, powoli odsłaniając piersi. Stasiek od razu dostrzega twój ruch i nerwowo spogląda we wsteczne lusterko.",
+"i - To naprawdę miłe, że tak uważasz. Nie mogę się doczekać kiedy dojedziemy na miejsce.",
+"Asia uśmiecha się i odwraca do ciebie.",
+"a - Ja też się nie mogę doczekać.",
+"TU BĘDZIE WARIACJA GŁÓWNEGO WĄTKU",
+"jump 4A28-13"
+],
 
 "4A28-26":
 [
-	"i - Mogę poczekać.",
+"i - Mogę poczekać.",
 "Mówisz spokojnie, z lekkim zawstydzeniem w głosie.",
 "a - Ale co wtedy? Na co ona ma czekać?",
 "s - Zobaczymy, no chciałbym, żeby się wstrzymała ze wszystkim, aż dotrzemy na miejsce.",
@@ -1168,39 +1174,69 @@ let script = {
 "a - Wy coś kombinujecie?",
 {
 		"Choice": {
-			"4A28- ": {
+			"4A28-37": {
 			"Text": " - Tak, trójkącik.",
-			"Do":"jump 4A28-",
+			"Do":"jump 4A28-37",
 		},
-			"4A28-": {
+			"4A28-38": {
 			"Text": " - W życiu!",
-			"Do":"jump 4A28-",
+			"Do":"jump 4A28-38",
 		},
 	},
 },
 ],
 
 
-"4A28-27"
-i - Podobam ci się taka? Bezwstydna?
+"4A28-27":
+[
+"i - Podobam ci się taka? Bezwstydna?",
+"Pytasz z uśmiechem, spoglądając dziewczynie głęboko w oczy. Ona odwzajemnia twój uśmiech i lekko przygryza wargę.",
+"a - Bardzo... Bardzo mi się podobasz.",
+"Mówi to powoli. Jej głos jest subtelny i seksowny. Stasiek się nie odzywa, tylko podgląda was przez wsteczne lusterko.",
+	{
+			"Choice": {
+				"4A28-39": {
+				"Text": " - Może przesiądziesz się do tyłu.",
+				"Do":"jump 4A28-39",
+			},
+				"4A28-40": {
+				"Text": " - Nie mogę sie doczekać, aż będziemy na miejscu.",
+				"Do":"jump 4A28-40",
+			},
+		},
+	},
+],
 
-"4A28-28"
+"4A28-28":
+[
+"i - Pokażesz mi swoje?",
+"Pytasz z uśmiechem.",
+"a - Ale co?",
+"i - No cycki!",
+"Niemal to wykrzykujesz z entuzjazmem. Śmiejąc się, przesuwasz się do przodu i kładziesz delikatnie dłoń na ramieniu Aśki.",
+"a - No może jak dojedziemy na miejsce, to wtedy się poopalam. Topless.",
+	{
+			"Choice": {
+				"4A28-41": {
+				"Text": " - Teraz.",
+				"Do":"jump 4A28-41",
+			},
+				"4A28-42": {
+				"Text": " - Tylko się poopalasz?",
+				"Do":"jump 4A28-42",
+			},
+			"4A28-43": {
+			"Text": " - No dobrze.",
+			"Do":"jump 4A28-43",
+			},
+		},
+	},
+],
 
-i - Pokażesz mi swoje?
-Pytasz z uśmiechem.
-a - Ale co?
-i - No cycki!
-Niemal to wykrzykujesz z entuzjazmem. Śmiejąc się, przesuwasz się do przodu i kładziesz delikatnie dłoń na ramieniu Aśki.
-a - No może jak dojedziemy na miejsce, to wtedy się poopalam. Topless.
-
-1. - Teraz.
-2. - Tylko się poopalasz?
-3. - No dobra.
-
-"4A28-29"
+"4A28-29":
 i - Wyskakuj z sukienki.
 
-4A28-30
+"4A28-30":
 i - Pokaż mi swój strój
 
 4A28-31
@@ -1215,16 +1251,21 @@ Zawstydzasz się, kurczowo osłaniając swoje ciało. Jest ci głupio, czujesz s
 
 Resztę drogi pokonujecie w milczeniu.
 jump na miejscu
+
 4A28-33
 Resztę drogi pokonujecie w milczeniu.
 Jump na miejscu.
 
-4A28-34
-
+"4A28-34":
+[
 "Ignorujesz jej prośbę i mimo wszystko postanawiasz się odezwać.",
-"i - Po prostu... ciągle o was myślę. Chce was rozebrać i pieprzyć się z wami nad brzegiem jeziora, wylizać ciebie i patrzeć jak on cię rucha od tyłu"
-
-jum fine
+"i - Po prostu... ciągle o was myślę. Chce was rozebrać i pieprzyć się z wami nad brzegiem jeziora, wylizać ciebie i patrzeć jak on cię rucha od tyłu.",
+"Mówisz to i przez krótki moment w powietrzu wisi ciężkie, nieokreślone napięcie. Wreszcie Aśka odzywa się głośno.",
+"a - Stasiek, zatrzymaj się.",
+"Stasiek gwałtownie hamuje i zjeżdża na pobocze. Jesteście w środku lasu.",
+"a - Dalej z nią nie jadę. - Mówi opryskliwie Aśka. - Niech wysiada.", //KONIEC
+"jump fine",
+],
 
 4A28-35
 "i - Zatrzymaj się.",
@@ -1253,22 +1294,43 @@ jum fine
 2. - Jeśli pozwolicie mi dołączyć. ( - Jeśli chcecie, mogę dołączyć.) Asia mówi że nie chce abyś dołaczała i że musi to przemyśleć. Docieracie na miejsce.
 
 4A28-37
+"i - Tak, trójkącik!"
+"Zaczynasz się śmiać"
+"a - No tak, zobaczymy.",
+
 4A28-38
+"i - W życiu!"
+"Odpowiadasz z wyczuwalną ironią w głosie."
+
+"s - Zaraz będziemy na miejscu. Nawigacja mówi że jeszcze półtora kilometra.",
+"Auto skręca z głównej drogi w las i zaczyna bujać się na koleinach."
+
 4A28-39
-
+"i - Może przesiądziesz się do tyłu?",
 4A28-40
+"i - Nie mogę się doczekać, aż będziemy na miejscu.",
 
 
+4A28-41
+
+i - Teraz.
+
+4A28-42
+
+i - Tylko się poopalasz?
+a - No a co mam robić?
 
 
+4A28-43
+i - No dobrze.
 
-4A28-
+4A28-44
 
+4A28-45
 
+4A28-46
 
-
-
-
+4A28-47
 
 
 
