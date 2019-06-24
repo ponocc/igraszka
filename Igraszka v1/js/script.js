@@ -1233,6 +1233,7 @@ let script = {
 	},
 ],
 
+/*
 "4A28-29":
 i - Wyskakuj z sukienki.
 
@@ -1348,7 +1349,7 @@ i - No dobrze.
 		},
 	},
 
-
+*/
 
 
 "4A29":[
@@ -1386,9 +1387,10 @@ i - No dobrze.
 "Chłopak odpowiada szybko. Aśka ogląda się do tyłu i robi przesadnie zaskoczoną minę. Nie jesteś pewna czy jest zdenerowana, zmęczona czy rozczarowana.",
 "a - Może zjedziemy na bok i zaliczycie sobie szybki numerek co, moi drodzy?",
 "Gorycz jej słów brzmi żartobliwie.",
+/*
 4. - Chętnie na was popatrzę.
 5. - Stasiek więcej nie wytrzyma.
-
+*/
 
 ],
 
@@ -1399,7 +1401,7 @@ i - No dobrze.
 "Wypadacie z drogi. Auto zatrzymuje się na drzewie. Gaśnie światło.",
 "jump fine", //KONIEC
 ],
-
+/*
 4A29-4
 "i - Możemy stanąć, chętnie popatrzę jak się za ciebie bierze.",
 4A29-5
@@ -1407,6 +1409,7 @@ i - No dobrze.
 4A29-
 4A29-
 
+*/
 
 "4A30":
 [
@@ -1423,10 +1426,12 @@ i - No dobrze.
 		},
 	},
 },
+],
+/*
 Pomóż jej ściągnąć ubranie.
 
 Przyglądaj się z uśmiechem.
-],
+*/
 
 "4A31":
 [
@@ -1434,7 +1439,7 @@ Przyglądaj się z uśmiechem.
 "i - Napewno dobrze na tobie leży. Masz takie zgrabne ciało.",
 "Asia zaczyna się śmiać i kręci przecząco głową.",
 
-No to pokażesz czy nie?
+//No to pokażesz czy nie?
 ],
 
 
@@ -1538,14 +1543,14 @@ No to pokażesz czy nie?
 "s - Nie jest tak źle.",
 "a - No tak, zawsze mogło być mniej drzew i piasku.",
 "Parkujecie w cieniu, Stasiek wyciąga rzeczy z bagażnika i wybieracie miejsce na namioty. Aśka spogląda na ciebie życzliwie i pokazuje palcem jezioro.",
-{
-	 "Choice": {
-		 "4A34": {
-		 "Text": "Idziesz z Aśką zobaczyć jaka jest woda.",
-		 "Do":"jump 4A34",
- },
-},
-},
+	{
+		 "Choice": {
+			 "4A34": {
+			 "Text": "Idziesz z Aśką zobaczyć jaka jest woda.",
+			 "Do":"jump 4A34",
+	 		},
+		},
+	},
 ],
 
 "4A23":
@@ -1557,18 +1562,18 @@ No to pokażesz czy nie?
 "s - Nie jest tak źle.",
 "a - No tak, zawsze mogło być mniej drzew i piasku.",
 "Parkujecie w cieniu, Stasiek wyciąga rzeczy z bagażnika i wybieracie miejsce na namioty.",
-{
-	 "Choice": {
-		 "4A34": {
-		 "Text": "Jednak idziesz z Aśką zobaczyć jaka jest woda.",
-		 "Do":"jump 4A36",
+	{
+		 "Choice": {
+			 "4A34": {
+			 "Text": "Jednak idziesz z Aśką zobaczyć jaka jest woda.",
+			 "Do":"jump 4A36",
+		 },
+			 "4A35": {
+			 "Text": "Próbujesz rozstawić namiot.",
+			 "Do":"jump 4A35",
+		 },
 	 },
-		 "4A35": {
-		 "Text": "Próbujesz rozstawić namiot.",
-		 "Do":"jump 4A35",
-	 },
- },
-},
+	},
 ],
 
 /*
