@@ -262,6 +262,7 @@ let script = {
 			}
 		},
 	],
+
 	"Roz3":
 	[
 									{
@@ -318,6 +319,7 @@ let script = {
 	},
 },
 ],
+
 "Roz4-1":
 [
 	"Wydaje ci się, że namiot za niecałe 100PLN nie wytrzyma pierwszej lepszej wichury. Ale lepsze to niż spanie pod gołym niebem. Zaczynasz pakować wszystko do plecaka. Wkrótce dostajesz SMS-a od Aśki. Niebawem powinni być pod twoim domem.",
@@ -343,8 +345,7 @@ let script = {
 //SUKIENKA
 "Roz4A":
 [
-"Naprawdę lubisz tę sukienkę. Bez chwili wahania zakładasz ją na siebie. Gdy kończysz się ubierać, pod twój dom przybywa auto Staśka. Wrzucasz swoje rzeczy do środka i ładujesz się na tylną kanapę. Przyglądasz się szybko swoim towarzyszom. Stasiek ma na sobie koszulkę i jakieś krótkie spodnie. Asia też ubrała się w sukienkę, sięga jej do połowy łydek, ma szerokie ramiączka i głęboki dekolt. Chyba spodobała im się twoja sukienka, bo oboje ją chwalą.",
-"Stasiek ma na sobie koszulkę i jakieś krótkie spodnie. Asia też jest w sukience, sięga jej do połowy łydek i ma szerokie ramiączka z dekoltem.  Oboje chwalą Twoją sukienkę, mówiąc że jest śliczna.",
+"Naprawdę lubisz tę sukienkę. Bez chwili wahania zakładasz ją na siebie. Gdy kończysz się ubierać, pod twój dom przybywa auto Staśka. Wrzucasz swoje rzeczy do środka i ładujesz się na tylną kanapę. Przyglądasz się szybko swoim towarzyszom. Stasiek ma na sobie koszulkę i jakieś krótkie spodnie. Asia też jest w sukience, sięga jej do połowy łydek i ma szerokie ramiączka z dekoltem.  Oboje chwalą Twoją sukienkę, mówiąc że jest śliczna.",
 {
 			"Choice": {
 				"4A1": {
@@ -435,8 +436,8 @@ let script = {
 				"Text": " - Też się nie mogę doczekać, aż pokażesz trochę ciałka.",
 				"Do":"jump 4A8",
 			},
-},
-},
+		},
+	},
 ],
 
 "4A3":
@@ -501,7 +502,6 @@ let script = {
 			},
 		},
 	},
-
 ],
 
 "4A6":
@@ -707,7 +707,7 @@ let script = {
 {
 		"Choice": {
 			"4A28": {
-			"Text": "Pokaż więcej.",
+			"Text": "Subtelnie pokazujesz więcej.",
 			"Do":"jump 4A28",
 		},
 			"4A29": {
@@ -717,6 +717,7 @@ let script = {
 	},
 },
 ],
+
 //Asia
 "4A17":
 [
@@ -905,7 +906,7 @@ let script = {
 		"Do":"jump 4A28-19",
 	},
 	},
-},
+	},
 ],
 
 "4A28-10":
@@ -1018,8 +1019,9 @@ let script = {
 [
 "Po krótkiej chwili milczenia w napięciu, postanawiasz posunąć się o krok dalej. Spoglądasz we wsteczne lusterko i nawiązujesz kontakt wzrokowy ze Staśkiem.",
 "i - Stasiek może patrzeć na twoje cycki codziennie. Ja nigdy nie miała okazji. Wydaje mi się, że oboje chcielibyśmy na ciebie popatrzeć.",
-"Aśka wzdycha cicho i zaczyna się delikatnie śmiać.",
+"Aśka wzdycha cicho i zaczyna się delikatnie śmiać. Po chwili nieśmiało odwraca głowę w twoją stronę i zerka na ciebie przez moment.",
 "a - Czasami nie wiem, czy on w ogóle chce na mnie patrzeć.",
+"s - No przecież, że chcę.",
 "i - Ja od zawsze chciałam.",
 "s - Nie możesz poczekać tych kilku minut, aż dojedziemy na miejsce?",
 	{
@@ -1132,8 +1134,8 @@ let script = {
 		},
 	},
 },
-
 ],
+
 "4A28-24":
 [
 "i - Dziękuję. Widziałam, że ci się podobają.",
@@ -1233,30 +1235,120 @@ let script = {
 	},
 ],
 
-/*
+
 "4A28-29":
-i - Wyskakuj z sukienki.
+[
+"i - No wyskakuj z sukienki.",
+"Aśka zaczyna się śmiać. Patrzy na ciebie przez chwilę badawczo, jakby chciała się upewnić czy tylko żartujesz, czy jesteś poważna. Wreszcie unosi się lekko, rozpina sukienkę i zsuwa ją z siebie.",
+{
+		"Choice": {
+			"4A28-44": {
+			"Text": "Pomóż jej ściągnąć ubranie.",
+			"Do":"jump 4A28-44",
+		},
+			"4A28-45": {
+			"Text": "Przyglądaj jej się z uśmiechem.",
+			"Do":"jump 4A28-45",
+			},
+		},
+	},
+],
 
 "4A28-30":
-i - Pokaż mi swój strój
+"i - Chciałabym zobaczyć twój strój.",
+"Mówisz powoli, przechylając się nieco w stronę Aśki.",
+"a - Jest zwyczajny. Czarne bikini.",
+"i - Napewno dobrze na tobie leży. Masz takie zgrabne ciało.",
+"Asia zaczyna się śmiać i kręci przecząco głową. Wygląda na lekko zdezorientowaną.",
+{
+		"Choice": {
+			"4A28-29": {
+			"Text": " - Zdejmij sukienkę.",
+			"Do":"jump 4A28-29",
+		},
+			"4A28-46": {
+			"Text": "Zacznij ją rozbierać.",
+			"Do":"jump 4A28-46",
+			},
+		},
+	},
+],
 
-4A28-31
-Spróbuj się wytłumaczyć.
-i - Bo... ja od bardzo dawna o was myślę. Jestem...
-Przerywasz na chwilę, spoglądasz na moment na twarz Aśki a następnie szybko uciekasz wzrokiem za okno.
-i - Nie byłam od dawna, z kimś, w łóżku. Ciągle o was myślę.
-generalnie smutne tony
-osłaniaasz swoje ciało, bo jesteś naga
+"4A28-31":
+[
+"Zaczynasz się tłumaczyć. Czujesz się głupio, jesteś zawstydzona i nie możesz uwierzyć, że doszło do takiej sytuacji.",
+"i - Bo... ja od bardzo dawna o was myślę. Jestem...",
+"Przerywasz na chwilę, spoglądasz na moment na twarz Aśki, a następnie szybko uciekasz wzrokiem za okno.",
+"i - Nie byłam od dawna, z kimś, wiecie, w łóżku. Ciągle o was myślę.",
+"Wciąż jesteś naga, wiec kuroczowo osłaniasz swoje ciało przed karcącym wzorkiem Aśki. Czujesz tylko wstyd i gorycz, próbując jednocześnie odnaleźć sens w swoim postępowaniu.",
+"Resztę drogi pokonujecie w milczeniu. Nikt nie komentuje twoich słów, przez co czujesz się, jakby wyrok w twojej sprawie został odroczony. A może dostałaś tylko żółtą kartkę i mimo wszystko wypad okaże się udany?",
+"ciag dalszy nastąpi - kolejna wariacja głównego wątku, po upokorzeniu - wyznanie.",
+"end"
+/*
+1. Ubierasz się.
+2. Jedziesz z gołymi cyckami, aż docieracie na miejsce.
+
+Gdy 1 - Docieracie na miejsce, >>opis miejsca<< w ciszy wypakowujecie wszystkie rzeczy. Zabierasz się za rozstawianie namiotu. Aśka rozstawia ze Staśkiem, jest potwornie gorąco.
+
+	- nic nie mówisz. (Rozstawiasz do końca namiot, Asia po dłuższej chwili się poddaje i idzie w stronę wody:1. Idziesz bez pytania. 2 Pytasz czy możęsz z nią iść.)
+
+	- pytasz czy asia idzie z tobą do wody. (Bez entuzjazmu się zgadza. Nie rozmawiacie, nad brzegiem rozbiera się do stroju i wchodzi do wody. 1. Rozbierasz się do naga i wchodzisz do wody. 2. Wchodzisz w bieliźnie.)
+
+Gdy 2 - Docieracie na miejsce >>OPIS MIEJSCA<<, wysiadacie. Oboje się na ciebie patrzą, Ty wysiadasz ostatnia, nadal gołe cycki.
+ - Zakładasz tylko stanik i wychodzisz z auta w bieliźnie. (Zakładasz swój stanik i zabierasz się za wypakowywanie rzeczy z auta w bieliźnie. Oboje wciąz się na ciebie patrzą, szczególnie stasiek. Szybko się pocisz bo jest okropnie gorąco. 1. Pytasz czy asia idzie z tobą do wody. 2. Bez pytania idziesz do wody sama. )
+ - Zakładasz tylko sukienkę, zostawiając stanik w samochodzie. (W milczeniu rozstawiacie namioty. sia po dłuższej chwili się poddaje i idzie w stronę wody:1. Idziesz bez pytania. 2 Pytasz czy możęsz z nią iść.)
+ - idziesz W samych majtkach go wody. (Docierasz do brzegu i zanurzasz delikatnie stopę. Woda jest przyjemnie chłodna. 1. ściągasz majtki i powoli wchodzisz do jeziora. 2. Wchodzisz do jeziora w samych majtkach.)
+ 						[Jeśli 1 - Gdy jesteś zanużona do pasa i powoli pocirasz mokrymi dłońmi swoje ramiona i barki, słyszysz delikatny plus wody. Odwracasz się i dostrzegasz Aśkę na brzegu, która zanurza stopy by sprawdzić wodę.]
+						>Śmiało, jest super.
+						>Nic nie mówisz, tylko się przyglądasz.
+						[Jeśli 2 - Śmiało wchodzisz do jeziora. Po kilku chwilach jesteś już zanurzona w wodzie aż do brody. Siedzisz w bezruchu rozmyślając o wszystkim co zaszło. Odwracasz się w stronę waszego obozu, nie widać go dokładnie przez trzcinę i krzaki. Na brzegu także nikogo nie ma, ale po chwili pojawia się tam Aśka. Jesteś kilka może kilkanascie metrów od brzegu, gdzie woda jest dość głęboka. ]
+*/
+//"jump na miejscu",
+
+
 4A28-32
-Zawstydzasz się, kurczowo osłaniając swoje ciało. Jest ci głupio, czujesz się podle, najchętniej byś wysiadła. Powtarzasz kilka razy przepraszam, widzisz niezadowoloenie i złość na twarzy Aśki.
+"Zawstydzasz się, nadal kurczowo osłaniając swoje ciało. Jest ci głupio, czujesz się podle, najchętniej byś wysiadła. Powtarzasz kilka razy przepraszam, widzisz niezadowoloenie i złość na twarzy Aśki.",
+"Resztę drogi pokonujecie w milczeniu. Twoi towarzysze, widząc twoją rekację, powstrzymują się od komentowania twoich słów. Masz wrażenie, że wyrok w twojej sprawie został odroczony.",
+"ciag dalszy nastąpi - kolejna wariacja głównego wątku, po upokorzeniu - milczenie.",
+"end",
 
-Resztę drogi pokonujecie w milczeniu.
-jump na miejscu
+/*
+Teraz jest zawstydzona i nic im nie mówi. Dociera na miejsce z nagimi piersiami.
+1. ubiera stanik i sukienkę
+2. Ubiera sukienkę bez stanika,
 
-4A28-33
-Resztę drogi pokonujecie w milczeniu.
-Jump na miejscu.
+Nie idzie pływać z Aśką. Rostawia namiot sama i siedzi obok niego, obserwująć bez słowa parę. Generalnie oboje są dla niej bardziej oschli.
+Wchodzi do namiotu na chwilę, poprawiając karimatę i śpiwór, [ściągnij majtki, albo nie ściągnij majtek], majtki są mokre, gdy je ściąga to ma większą ochotę powiedzieć prawdę.
+JUŻ NIE KUSI.
+ - Nigdy nie całowałam się z dziewczyną.
+ Zaczynają pić wino. Oni ją częstują, przez to robi się bardzije rozmowna.
+Wyznanie prowadzi do zabawy przy ognisku.
+Jeśli ma majtki to nie przyznaje się do niczego. Przy ognisku rozmawiają wymijająco. Potem kładzie się spać i mocno się gwałci.
 
+Ta gałąź wątpku powinna prowadzić do rozmowy przy ognisku i szczerego wyznania chęci do ruchania (jak 4A28-31), albo do masturbacji w namiocie (głośnej lub skrytej), może wątek samobójstwa?
+
+
+*/
+
+//"jump na miejscu",
+],
+
+"4A28-33":
+[
+"Stwierdzasz, że najlepszym wyjściem będzie posłuchać jej prośby i milczysz przez resztę drogi. Po kilkunastu, długich i krępujących minutach docieracie na miejsce."
+"ciag dalszy nastąpi - kolejna wariacja głównego wątku, Asia sugerowała że zamierzasz bzykać się ze Stasiem.",
+"end",
+/*
+Atmosfera jest napięta. docieracie na miejsce, Opis miejsca, rozstawianie namiotu. Asia chłodno mówi że idzie nad wodę.
+1. Idziesz za nią bez słowa (to nie ma znaczenia, lekko się na ciebie tylko gniewa)
+2. Pytasz czy możesz iść i ona się zgadza
+
+W obu przypadkach pyta cię nad wodą o co ci chodziło. Masz okazję by wyznać, że jesteś napalona na nią lub na ich obojga, bo fantazjuesz o trójkącie lub tylko o niej.
+Wchodzicie do wody, pocałunek w wodzie?
+
+*/
+
+],
 "4A28-34":
 [
 "Ignorujesz jej prośbę i mimo wszystko postanawiasz się odezwać.",
@@ -1268,73 +1360,268 @@ Jump na miejscu.
 "jump fine",
 ],
 
-4A28-35
+"4A28-35":
+[
 "i - Zatrzymaj się.",
 "Stasiek wygląda na zdezorietnowanego, spogląda we wsteczne lusterko, a potem na Aśkę, szukając najpewniej jakiegoś wytłumaczenia.",
 "a - No stajesz czy nie?",
 "i - Zaraz pewnie stanie.",
 "Zaczynasz głośno chichotać. Auto zatrzymuje się na poboczu.",
 "s - I co teraz?",
+	{
+			"Choice": {
+				"4A28-47": {
+				"Text": " - Teraz cię wyruchamy.",
+				"Do":"jump 4A28-47",
+			},
+				"4A28-48": {
+				"Text": " - Teraz mnie wyruchaj.",
+				"Do":"jump 4A28-48",
+			},
+			"4A28-49": {
+			"Text": " - Teraz wyruchaj Aśkę.",
+			"Do":"jump 4A28-49",
+		},
+		},
+	},
+],
 
-1. - Teraz cię wyruchamy.
-2. - Teraz wyruchaj mnie.
-3. - Teraz wyruchaj Aśkę.
-
-4A28-36
+"4A28-36":
+[
 "i - Chcę na was popatrzeć.",
-"Twoje słowa wywołują niepewność w towaryszach twojej podróży.",
+"Twoje słowa wywołują niepewność i zdumienie w towaryszach twojej podróży.",
 "s - No przecież patrzysz cały czas.",
-"Aśka wzdycha głęboko i potrząsa głową.",
+"W głosie chłopaka czuć wyraźne zdezorientowanie. Aśka wzdycha głęboko i potrząsa głową.",
 "i - Ja chcę zobaczyć jak się bzykacie.",
-"Stasiek robi zaskoczoną minę. Samochód odczuwalnie zwalnia, a atmosfera w środku robi się jeszcze bardziej napięta. Po chwili cicho odzywa się Aśka.",
-"a - Będziesz... tylko patrzeć.",
+"Stasiek robi zaskoczoną minę. Samochód odczuwalnie zwalnia, a atmosfera w środku robi się jeszcze bardziej napięta. Zaciskasz mocniej zęby, oczekująć w napięciu jakiegoś rozwiązania, wybuchu śmiechu czy nawet nieśmiesznego żartu, który skieruje rozmowę na inne tory. Po chwili cicho odzywa się Aśka.",
+"a - Ale będziesz... tylko patrzeć.",
+	{
+			"Choice": {
+				"4A28-50": {
+				"Text": " - Dobrze.",
+				"Do":"jump 4A28-50",
+			},
+				"4A28-51": {
+				"Text": " - Pozwólcie mi dołączyć.",
+				"Do":"jump 4A28-51",
+			},
+		},
+	},
+],
 
-1. - Tak.
-(Dłuższa chwila milczenia, po czym Aśka mówi, że się zgadza, ale ma jeden warunek, że zrobią to po zmroku, przy świetle ogniska i wszyscy muszą być nadzy.),
-
-2. - Jeśli pozwolicie mi dołączyć. ( - Jeśli chcecie, mogę dołączyć.) Asia mówi że nie chce abyś dołaczała i że musi to przemyśleć. Docieracie na miejsce.
-
-4A28-37
+"4A28-37":
+[
 "i - Tak, trójkącik!"
-"Zaczynasz się śmiać"
-"a - No tak, zobaczymy.",
+"Zaczynasz się śmiać. Aśka również wygląda na rozbawioną.",
+"a - No tak, zobaczymy. To jedyna rzecz, której nie miałeś, co nie, Stasiek? Niespełniona fantazja?",
+"i - Chyba każdy facet tego pragnie. I niektóre dziewczyny...",
+"Aśka przechyla się odrobinę do przodu, a następnie obraca do tyłu, by móc cię lepiej widzieć. Natychmiast zauważasz, że jej wzrok instynktownie ląduje na twoich nagich piersiach. Wypinasz klatkę piersiową lekko do przodu, poprawiając swoje włosy.",
+"a - Coś mi mówi, że nie żartujesz.",
+"Obie zaczynacie się śmiać, po chwili nawet zdezorientowany Stasiek chichocze cicho.",
+	{
+			"Choice": {
+				"4A28-52": {
+				"Text": " - Chciałabym przy ognisku.",
+				"Do":"jump 4A28-52",
+			},
+				"4A28-53": {
+				"Text": "Postaraj się ją skusić.",
+				"Do":"jump 4A28-53",
+			},
+		},
+	},
+],
 
-4A28-38
-"i - W życiu!"
-"Odpowiadasz z wyczuwalną ironią w głosie."
-
+"4A28-38":
+[
+"i - W życiu!",
+"Odpowiadasz z wyczuwalną ironią w głosie.",
+"Aśka patrzy na ciebie przez moment z szerokim uśmiechem na twarzy. Widzisz jak jej wzrok wędruje kilka razy na twoje nagie piersi. Subtelnie przesuwasz palcami w ich pobliżu, muskając kilka razy opuszkami sutki. Twoje ciało błyszczy się od potu.",
 "s - Zaraz będziemy na miejscu. Nawigacja mówi że jeszcze półtora kilometra.",
-"Auto skręca z głównej drogi w las i zaczyna bujać się na koleinach."
+"Auto skręca z głównej drogi w las i zaczyna bujać się na koleinach.",
+"end",
 
-4A28-39
+/*
+
+Docieracie na miejsce. Opis miejsca. Wybór ubrać sukienkę lub nie ubierać i chodzić w samych majtkach. Spytaj czy asia ściągnie sukienkę, czy ściągnie stanik i sukienkę, czy idzie nad wodę
+
+
+*/
+],
+
+"4A28-39":
+
 "i - Może przesiądziesz się do tyłu?",
+"Mowisz to subtelnym głosem, jednocześnie przesuwając się do przodu, by być bliżej jej fotela. Aśka odwraca się i patrzy na ciebie przez moment. Następnie kiwa z entuzjazmem głową i prosi by Stasiek zatrzymał auto. Samochód parkuje na poboczu i po chwili dziewczyna siada obok ciebie na tylniej kanapie. Chłopak nie odzywa się słowem, tylko ciągle zerka w lusterko. Po chwili znowu ruszacie w drogę, choć auto jedzie zdecydowanie wolniej, niż wcześniej.",
+
+//Asia siada z tyłu
+
+
 4A28-40
 "i - Nie mogę się doczekać, aż będziemy na miejscu.",
 
 
 4A28-41
 
-i - Teraz.
+"i - Ale ja chcę je zobaczyć teraz!",
+"Rzucasz głupkowatym głosem, pozując na władczą i dominującą osobę. Od razu zaczynasz się śmiać, co wywołuję podobną reakcję u pozostałych pasażerów.",
 
-4A28-42
+"4A28-42"
 
 i - Tylko się poopalasz?
 a - No a co mam robić?
+i - Mogłbyśmy popływać... Nago. Ja i tak zapomniałam stroju.
+a - A, w ten sposób. No w sumie... co mi szkodzi.
 
 
 4A28-43
-i - No dobrze.
+//Może Aśka poopala się toples, ida to akceptuje
+"i - No dobrze, dobrze. Chyba wytrzymam tych kilka minut napięcia.",
+"s - Jakiego napięcia?",
+"i - No po prostu, nie mogę się doczekać jeziora i w ogóle...",
+"Docieracie na miejsce."
 
-4A28-44
+"4A28-44":
+[
+"Aśka grzecznie mówi, że sama sobie poradzi, dziękując za twoją ofertę pomocy. Następnie z zalotnym uśmiechem zrzuca ramiączka na bok i powoli przesuwa sukienkę w dół, odsłaniajac ciemnoniebieski stanik. Dokładniej jej się przyglądasz, uśmiechając się przy tym szeroko. Dolna część stroju ma taki sam odcień i normalny krój. Dziewczyna bez przerwy rzuca krótkie i subtelne spojrzenia na twoje nagie piersi.",
+	{
+			"Choice": {
+				"4A28- ": {
+				"Text": "Złap ją za cycki.",
+				"Do":"jump 4A28-",
+			},
+				"4A28-": {
+				"Text": " - Liczyłam na bardziej skąpy strój.",
+				"Do":"jump 4A28-",
+			},
+		},
+	},
+],
+
+"Złap ją za cycuszki":
+[
+	"Bez najmniejszego zawahania kładziesz prawą dłoń na jej biuście i delikatnie zaciskasz palce. Aśka otwiera szeroko usta i początkowo wygląda na ogromnie zaskoczoną, lecz sekundę później jej wyraz twarzy zmienia się. Dziewczyna uśmiecha i zalotnie przygryza wargę, wypinając bius odrobinę do przodu. Następnie dostrzegasz jak jej prawa ręką powoli przesuwa się w górę. Gdy jej palce ledwie muskają twoją skórę, z twoich ust wydobywa się ciche westchnienie.",
+"a - Ojej...",
+1. - Nie krępuj się.
+2. Wsuń palce pod jej stanik.
+],
+
+"Liczłam na bardziej skąpy strój.":
+[
+"i - Ah, sądziłam, że twój strój będzie... bardziej skąpy.",
+"a - Rety, no nie jestem aż taka bezwstydna.",
+"i - Przestań, nie masz się czego wstydzić.",
+"Aśka śmieje się głośno. Odchylasz się nieco do tyłu i poprawiasz swoje włosy, wypinajac przy tym piersi do przodu.",
+1. Złap się za piersi i zacznij się delikatnie pieścić.
+2. - To nie fair, że masz na sobie stanik.
+],
 
 4A28-45
+"Przyglądasz jej się z uśmiechem."
+1. - Pływałaś kiedyś nago? - Spytaj, wkazując na jej stanik.
+2. - No weź, zdejmij ten stanik.
 
-4A28-46
+"4A28-46":
+Zacznij ją rozbierać.
+Nie spodoba jej się to na początku
+ - Hej co robisz przestań.
+ - Ty możesz sobie moje cycki oglądać, a ja twoich nie? Pff. Żartujesz. Stasiek na pewno też już nie może wytrzymać.
+ Auto zuważalnie zwalnia. Aśka w końcu nie stawia oporu i powoli się rozbiera. Ściąga sukienkę i, choć o tym nie mówiłaś, stanik.
+1. Złap ją za cycek bez pytania
+2. - Masz zajebiste cycki. ( - Twoje cycki wyglądają zajebiście!)
+
 
 4A28-47
+1. - Teraz cię wyruchamy.
+Mówisz zdecydowanie, przesuwając się do przodu, tak że twoja głowa znajduje się pomiędzy fotelami.
+s - Tutaj? Na środku drogi?
+a - Serio? Pojebało was? To cie obchodzi, że jesteśmy na środku drogi, a nie to że ona proponuej seks?
+s - Ale to od miasta było widać, że jest napalona.
+a - Co z tego?
+i - Przestańcie, nie kłódzcie się. Możecie zrobić ze mną co chcecie.
+Zaczynasz dotykać swoich piersi.
 
 
+4A28-48
+2. - Teraz mnie wyruchaj, już nie mogę wytrzymać.
+Nie podoba jej się
+Fine
 
+4A28-49
+3. - Teraz wyruchaj Aśkę.
+Co?
+Chcę zobaczyć jak ją posuwasz.
+
+
+4A28-50
+"i - Dobrze.",
+"Odpowiadasz po chwili, przygryzając wargę. Jedziecie w milczeniu przez dłuższą chwilę, gdy nagle Aśka odzywa się ponownie, nieco głośniej niż przed chwilą.",
+"a - Ale zrobimy to po zmroku, przy ognisku.",
+"Potakujesz głową, a Stasiek wydaje z siebie głośne mruknięcie, które odbierasz za subtelny brak zastrzeżeń do tego planu. Asia odwraca się do ciebie i przygląda uważnie. Nie umiesz odczytać jej wyrazu twarzy, wydaje się być kompletnie obojętna.",
+"a - Ale mam jeden warunek...Skoro mam być naga i Stasiek ma się rozebrać, to ty też musisz.",
+1. - W porządku, rozbiorę się.
+2. - Dobrze, ale ty mnie rozbierzesz, a ja rozbiorę ciebie.
+
+//Docieracie na miejsce, opis miejsca, wybór czy się ubrać czy nie, idziecie do wody, czy nie, skip do ogniska?
+
+
+4A28-51
+"i - Dobrze, ale chciałabym... do was dołaczyć. Jeśli pozwolisz.",
+"Asia odwraca głowę do tyłu by na ciebie spojrzeć. Milczy przez chwilę, przygryzając bezwiednie wargę.",
+"a - Nie wiem, czy to dobry pomysł.",
+"s - Ja myślę, że warto o tym porozmawiać jak już będziemy...",
+"a - Tak. Muszę to przemyśleć.",
+"Asia przerywa mu spokojnym, acz bardzo zdecydowanym głosem. Zapada nieznośna cisza, która zaczyna cię okropnie krępować. Stasiek co chwile spogląda na ciebie i twoje nagie piersi, ale tobie zupełnie to nie przeszkadza, a nawet trochę kręci.",
+//Docieracie na miejsce, opis miejsca, rozstawianie namiotu. Idziecie do wody, nadal jesteś w samych majtkach, aśka rozbiera się od razu do stroju.
+
+4A28-52
+ - Chciałaby... Przy ognisku, no wiesz, spróbować.,
+
+4A28-53
+"Postaraj się ją skusić. Szybko, niemal teatralnie kładziesz palec wskazujący na ustach, sugerując zachowanie ciszy, następnie powoli wysuwasz język i delikatnie oblizujesz palec. Wsuwasz go do środka i ssiesz. ",
+
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
+4A28-
 
 	{
 			"Choice": {
@@ -1429,8 +1716,11 @@ i - No dobrze.
 ],
 /*
 Pomóż jej ściągnąć ubranie.
+Aśka mówi, że sama sobie poradzi, dziękując za pomoc, a następnie zrzuca ramiączka na bok i powoli przesuwa sukienkę w dół, odsłaniajac ciemnoniebieski stanik. Przyglądasz jej się z uśmiechem. Dolna część stroju ma taki sam odcień i normalny krój.
+
 
 Przyglądaj się z uśmiechem.
+Asia rzuca ramiączka na bok i powoli przesuwa sukienkę w dół, odsłaniajac ciemnoniebieski stanik. Dolna część stroju jest w takim samym kolorze.
 */
 
 "4A31":
