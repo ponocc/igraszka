@@ -805,7 +805,7 @@ let script = {
 "Parkujecie w cieniu, Stasiek wyciąga rzeczy z bagażnika i wybieracie miejsce na namioty.",
 	{
 		 "Choice": {
-			 "4A34": {
+			 "4A36": {
 			 "Text": "Jednak idziesz z Aśką zobaczyć jaka jest woda.",
 			 "Do":"jump 4A36",
 		 },
