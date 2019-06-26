@@ -834,14 +834,17 @@ Wariacja wątku zdrady, Asia sama idzie nad wodę, ty szybko nudzisz się rozsta
   },
 ],
 
-4A28-43
-//Może Aśka poopala się toples, ida to akceptuje
+"4A28-43":
+[
 "i - No dobrze, dobrze. Chyba wytrzymam tych kilka minut napięcia.",
 "s - Jakiego napięcia?",
 "i - No po prostu, nie mogę się doczekać jeziora i w ogóle...",
-"Docieracie na miejsce."
+"Stasiek, ku twemu zaskoczeniu, nie odpowiada i dalszą część drogi pokojuecie we względnym milczeniu. Po kilku minutach docieracie na miejsce. Jest to nieduża polanka, do której prowadzi mało uczęszczana, leśna droga. 'Plaża' to jest po prostu kilka metrów brzegu bez trzciny.",
+" - Znaleźliśmy to miejsce na jakimś forum, wygląda trochę inaczej niż na fotkach.",
+"Odzywa się Aśka, gdy parkujecie. Po opuszczeniu auta Stasiek zabiera się za rozpakowywanie rzeczy z bagażnika, podczas gdy ty i Asia wybieracie miejsce na namioty.",
+  
 
-
+],
 
 
 
@@ -1084,6 +1087,7 @@ Wchodzicie do wody, pocałunek w wodzie?
 "Powoli, małymi krokami, podążasz za nią, prowadzona za rękę.",
 
 ],
+
 4A28-
 4A28-
 4A28-
