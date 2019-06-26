@@ -689,7 +689,7 @@ let script = {
 			"Text": " - Będziemy się macać pod wodą. - Zażartuj.",
 			"Do":"jump 4A24",
 		},
-			"4A25": {
+			"4A26": {
 			"Text": " - Może jak nauczysz się pływać, to pozwolimy ci się przekonać.",
 			"Do":"jump 4A26",
 		},
@@ -697,26 +697,11 @@ let script = {
 },
 ],
 
-// Tutaj Szybki wątek
+// Tutaj: Szybki wątek
+// Zassać z drugiego pliku
+// Tutaj: koniec Szybkiego Wątku
 
-
-
-
-
-
-
-// Tutaj koniec Szybkiego Wątku
-
-
-
-
-
-
-
-
-
-
-//Spontaniczna zmiana zeznań
+//TUTAJ: Spontaniczna zmiana zeznań
 
 "4A18":
 [
@@ -862,6 +847,7 @@ Będziemy się podtapiać. Żart nietrafiony.
 1. - Ja cię chętnie zmotywuję. (Nitka nie trafiona.)
 2.  - Chyba nie masz wyjścia i musisz wejść z nami do wody. (Nikta 'we troje w wodzie')
 */
+	
  //Wstydliwe rozwiązanie
 
 "4A27":
