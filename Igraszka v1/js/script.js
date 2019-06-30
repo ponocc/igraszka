@@ -17,7 +17,7 @@
 // Define the messages used in the game.
 let messages = {
 	"Help": {
-		"Title": "Help",
+		"Title": "Pomoc",
 		"Subtitle": "Some useful Links",
 		"Message": "<p><a href='https://monogatari.io/documentation/'>Documentation</a> - Everything you need to know.</p><p><a href='https://monogatari.io/demo/'>Demo</a> - A simple Demo.</p>"
 	}
@@ -26,8 +26,8 @@ let messages = {
 // Define the notifications used in the game
 let notifications = {
 	"Welcome": {
-		title: "Welcome",
-		body: "This is the Monogatari VN Engine",
+		title: "Witaj",
+		body: "Oto demo gry.",
 		icon: ""
 	}
 };
@@ -847,7 +847,7 @@ Będziemy się podtapiać. Żart nietrafiony.
 1. - Ja cię chętnie zmotywuję. (Nitka nie trafiona.)
 2.  - Chyba nie masz wyjścia i musisz wejść z nami do wody. (Nikta 'we troje w wodzie')
 */
-	
+
  //Wstydliwe rozwiązanie
 
 "4A27":
