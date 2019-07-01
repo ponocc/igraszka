@@ -565,6 +565,7 @@ Wariacja wątku zdrady, Asia sama idzie nad wodę, ty szybko nudzisz się rozsta
 ],
 
 "4A28-30":
+[
 "i - Chciałabym zobaczyć twój strój.",
 "Mówisz powoli, przechylając się nieco w stronę Aśki.",
 "a - Jest zwyczajny. Czarne bikini.",
@@ -609,6 +610,7 @@ Wariacja wątku zdrady, Asia sama idzie nad wodę, ty szybko nudzisz się rozsta
 ],
 
 "4A28-32":
+[
 "Zawstydzasz się, nadal kurczowo osłaniając swoje ciało. Jest ci głupio, czujesz się podle, najchętniej byś wysiadła. Powtarzasz kilka razy przepraszam, widzisz niezadowoloenie i złość na twarzy Aśki.",
 "Resztę drogi pokonujecie w milczeniu. Twoi towarzysze, widząc twoją rekację, powstrzymują się od komentowania twoich słów. Masz wrażenie, że wyrok w twojej sprawie został odroczony.",
 "Auto skręca z głównej drogi w las i zaczyna bujać się na koleinach. Po chwili docieracie na miejsce. Jest to nieduża polana, porośnięta wysuszoną trawą i chwastami. 'Plaża' to po prostu kilka metrów brzegu bez trzciny. Parkujecie w ciszy, gdy uświadamiasz sobie, że nadal nie jesteś w pełni ubrana.",
@@ -709,7 +711,7 @@ Wariacja wątku zdrady, Asia sama idzie nad wodę, ty szybko nudzisz się rozsta
 
 "4A28-37":
 [
-"i - Tak, trójkącik!"
+"i - Tak, trójkącik!",
 "Zaczynasz się śmiać. Aśka również wygląda na rozbawioną.",
 "a - No tak, zobaczymy. To jedyna rzecz, której nie miałeś, co nie, Stasiek? Niespełniona fantazja?",
 "i - Chyba każdy facet tego pragnie. I niektóre dziewczyny...",
@@ -775,9 +777,7 @@ Wariacja wątku zdrady, Asia sama idzie nad wodę, ty szybko nudzisz się rozsta
   },
 ],
 
-
 "4A28-40":
-
 [
 "i - Nie mogę się doczekać, aż będziemy na miejscu.",
 "a - Ja też.",
@@ -839,64 +839,69 @@ Wariacja wątku zdrady, Asia sama idzie nad wodę, ty szybko nudzisz się rozsta
 "i - No dobrze, dobrze. Chyba wytrzymam tych kilka minut napięcia.",
 "s - Jakiego napięcia?",
 "i - No po prostu, nie mogę się doczekać jeziora i w ogóle...",
-"Stasiek, ku twemu zaskoczeniu, nie odpowiada i dalszą część drogi pokojuecie we względnym milczeniu. Po kilku minutach docieracie na miejsce. Jest to nieduża polanka, do której prowadzi mało uczęszczana, leśna droga. 'Plaża' to jest po prostu kilka metrów brzegu bez trzciny.",
-" - Znaleźliśmy to miejsce na jakimś forum, wygląda trochę inaczej niż na fotkach.",
-"Odzywa się Aśka, gdy parkujecie. Po opuszczeniu auta Stasiek zabiera się za rozpakowywanie rzeczy z bagażnika, podczas gdy ty i Asia wybieracie miejsce na namioty.",
-  
-
+"Stasiek, ku twemu zaskoczeniu, nie odpowiada i dalszą część drogi pokonujecie we względnym milczeniu. Po kilku minutach docieracie na miejsce. Jest to nieduża polanka, do której prowadzi mało uczęszczana, leśna droga. 'Plaża' to jest po prostu kilka metrów brzegu bez trzciny.",
+"a - Znaleźliśmy to miejsce na jakimś forum, nie wygląda tak źle jak myślałam.",
+"Parkujecie w cieniu, Asia i Stasiek wysiadają pierwsi.",
+  {
+      "Choice": {
+        "4A28-54": {
+        "Text": "Ubierasz sukienkę.",
+        "Do":"jump 4A28-54",
+      },
+        "4A28-55": {
+        "Text": "Zostajesz w samych majtkach.",
+        "Do":"jump 4A28-55",
+      },
+    },
+  },
 ],
 
-
-
 "4A28-44":
+
 [
 "Aśka grzecznie mówi, że sama sobie poradzi, dziękując za twoją ofertę pomocy. Następnie z zalotnym uśmiechem zrzuca ramiączka na bok i powoli przesuwa sukienkę w dół, odsłaniajac ciemnoniebieski stanik. Dokładniej jej się przyglądasz, uśmiechając się przy tym szeroko. Dolna część stroju ma taki sam odcień i normalny krój. Dziewczyna bez przerwy rzuca krótkie i subtelne spojrzenia na twoje nagie piersi.",
 	{
 			"Choice": {
-				"4A28- ": {
+				"4A28-65": {
 				"Text": "Złap ją za cycki.",
-				"Do":"jump 4A28-",
+				"Do":"jump 4A28-65",
 			},
-				"4A28-": {
+				"4A28-66": {
 				"Text": " - Liczyłam na bardziej skąpy strój.",
-				"Do":"jump 4A28-",
+				"Do":"jump 4A28-66",
 			},
 		},
 	},
 ],
 
-"Złap ją za cycuszki":
+"4A28-45":
 [
-	"Bez najmniejszego zawahania kładziesz prawą dłoń na jej biuście i delikatnie zaciskasz palce. Aśka otwiera szeroko usta i początkowo wygląda na ogromnie zaskoczoną, lecz sekundę później jej wyraz twarzy zmienia się. Dziewczyna uśmiecha i zalotnie przygryza wargę, wypinając bius odrobinę do przodu. Następnie dostrzegasz jak jej prawa ręką powoli przesuwa się w górę. Gdy jej palce ledwie muskają twoją skórę, z twoich ust wydobywa się ciche westchnienie.",
-"a - Ojej...",
-1. - Nie krępuj się.
-2. Wsuń palce pod jej stanik.
+"Przyglądasz jej się z uśmiechem, odrobinę przygryzając wargę.",
+{
+		"Choice": {
+			"4A28-67": {
+			"Text": " - Pływałaś kiedyś nago?",
+			"Do":"jump 4A28-67",
+		},
+			"4A28-68": {
+			"Text": " - No weź, stanik ci nie potrzebny.",
+			"Do":"jump 4A28-68",
+		},
+	},
+},
 ],
-
-"Liczłam na bardziej skąpy strój.":
-[
-"i - Ah, sądziłam, że twój strój będzie... bardziej skąpy.",
-"a - Rety, no nie jestem aż taka bezwstydna.",
-"i - Przestań, nie masz się czego wstydzić.",
-"Aśka śmieje się głośno. Odchylasz się nieco do tyłu i poprawiasz swoje włosy, wypinajac przy tym piersi do przodu.",
-1. Złap się za piersi i zacznij się delikatnie pieścić.
-2. - To nie fair, że masz na sobie stanik.
-],
-
-4A28-45
-"Przyglądasz jej się z uśmiechem."
-1. - Pływałaś kiedyś nago? - Spytaj, wkazując na jej stanik.
-2. - No weź, zdejmij ten stanik.
 
 "4A28-46":
-Zacznij ją rozbierać.
-Nie spodoba jej się to na początku
- - Hej co robisz przestań.
- - Ty możesz sobie moje cycki oglądać, a ja twoich nie? Pff. Żartujesz. Stasiek na pewno też już nie może wytrzymać.
- Auto zuważalnie zwalnia. Aśka w końcu nie stawia oporu i powoli się rozbiera. Ściąga sukienkę i, choć o tym nie mówiłaś, stanik.
+[
+"Spokojnym ruchem przenosisz rękę na jej ramię i powoli próbujesz zsunąć ramiączko jej sukienki. Dziewczyna natychmiast odpycha twoją dłoń. Jest przy tym delikatna i obrzuca cię pytającym spojrzeniem. Mimo jej reakcji, próbujesz ponownie ją dotknąć. Gdy twoje palce niemal dotykają jej skóry, Asia w końcu się odzywa.",
+"a - Co robisz? Przestań.",
+"i - Ty możesz sobie moje cycki oglądać, a ja twoich nie?",
+"Dziewczyna kręci głową przecząco, jednocześnie chichocząc cicho.",
+" - No nie żartuj? Stasiek na pewno też już nie może wytrzymać.",
+"Już wcześniej zauważyłaś, że auto zauważalnie zwolniło. Na dźwięk swojego imienia chłopak ostrożnie spojrzał we wstrzeczne lusterko i potarł dłonią czubek swojej głowy. Aśka spogląda na niego przez chwilę, nie reagując na działania twojej dłoni. W koncu zsuwasz ramiączko jej sukienki wzdłuż ramienia.  w końcu nie stawia oporu i powoli się rozbiera. Ściąga sukienkę i, choć o tym nie mówiłaś, stanik.",
 1. Złap ją za cycek bez pytania
 2. - Masz zajebiste cycki. ( - Twoje cycki wyglądają zajebiście!)
-
+],
 
 4A28-47
 1. - Teraz cię wyruchamy.
@@ -963,6 +968,7 @@ Zostajesz w samych majtkach.
 Stasiek wyciąga rzeczy z bagażnika i wybieracie miejsce na namioty. Aśka i Stasiek ciągle ci się przyglądają. Wyglądają na bardzo radosnych.
 a - czy ty w ogóle się krępujesz?
 i - Nie. Wy też nie musicie. - Żart.
+a - Skoro tak mówisz...
 1 W takim razie czy ściągniesz stanik i sukienkę? Żeby było równo.
 2 Chodźmy nad wodę, nie mogę już wytrzymać. Asia, idziesz?
 
@@ -1088,10 +1094,32 @@ Wchodzicie do wody, pocałunek w wodzie?
 
 ],
 
-4A28-
-4A28-
-4A28-
-4A28-
+"4A28-65":
+//Złap ją za cycki
+[
+"Bez najmniejszego zawahania kładziesz prawą dłoń na jej biuście i delikatnie zaciskasz palce. Aśka otwiera szeroko usta i początkowo wygląda na ogromnie zaskoczoną, lecz sekundę później jej wyraz twarzy zmienia się. Dziewczyna uśmiecha i zalotnie przygryza wargę, wypinając bius odrobinę do przodu. Następnie dostrzegasz jak jej prawa ręką powoli przesuwa się w górę. Gdy jej palce ledwie muskają twoją skórę, z twoich ust wydobywa się ciche westchnienie.",
+"a - Ojej...",
+1. - Nie krępuj się.
+2. Wsuń palce pod jej stanik.
+
+],
+"4A28-66":
+//Liczłam na bardziej skąpy strój.
+[
+"i - Ah, sądziłam, że twój strój będzie... bardziej skąpy.",
+"a - Rety, no nie jestem aż taka bezwstydna.",
+"i - Przestań, nie masz się czego wstydzić.",
+"Aśka śmieje się głośno. Odchylasz się nieco do tyłu i poprawiasz swoje włosy, wypinajac przy tym piersi do przodu.",
+1. Złap się za piersi i zacznij się delikatnie pieścić.
+2. - To nie fair, że masz na sobie stanik.
+],
+
+4A28-67
+ - Pływałaś kiedyś nago? - Spytaj, wkazując na jej stanik.
+
+4A28-68
+ - No weź, stanik ci nie potrzebny.
+
 4A28-
 4A28-
 4A28-
