@@ -1593,20 +1593,31 @@ Wariacja wątku zdrady, Asia sama idzie nad wodę, ty szybko nudzisz się rozsta
 "i - Teraz cię wyruchamy.",
 "Mówisz zdecydowanym tonem, przesuwając się do przodu, tak że twoja głowa znajduje się pomiędzy fotelami.",
 "s - Tutaj? Na środku drogi?",
-"a - Serio? Pojebało was? To cie obchodzi, że jesteśmy na środku drogi, a nie to że ona proponuej seks?",
+"a - Serio? Pojebało was? To, że jesteśmy na drodze, nie ma znaczenia, nie widzisz co ona proponuje?!",
 "s - Ale to od miasta było widać, że jest napalona.",
 "a - No i co z tego?",
 "Asia ma zirytowaną minę, jej wzrok świdruje twarz Staśka, która pozostaje w bezruchu, zapatrzona w drogę.",
 "i - Przestańcie, nie kłóćcie się. Możecie zrobić ze mną co chcecie.",
 "Przesuwasz się z powrotem do tyłu, opierając wygodnie plecy o kanapę. Jednocześnie, zaczynasz dotykać swoich piersi, ściskająć je mocno po kilka razy.",
-//1.
-//2.
+{
+		"Choice": {
+			"4A28-70": {
+			"Text": "Włóż palce w majtki.",
+			"Do":"jump 4A28-70",
+		},
+			"4A28-71": {
+			"Text": "Subtelnie włóż palec do ust.",
+			"Do":"jump 4A28-71",
+		},
+	},
+},
 ],
 
 "4A28-48":
 [
 "i - Teraz mnie wyruchaj, już nie mogę wytrzymać.",
-"Aśce się to nie podoba.",
+"Aśka odwraca się gwałtownie do tyłu i patrzy na ciebie z politowaniem.",
+"a - Odwieźmy ją do domu, więcej z nią nie wytrzymam.",
 "jump fine",
 ],
 
@@ -1616,7 +1627,11 @@ Wariacja wątku zdrady, Asia sama idzie nad wodę, ty szybko nudzisz się rozsta
 "s - Co?",
 "i - Chcę zobaczyć jak ją posuwasz.",
 "a - Pojebało cię?",
-
+"i - Od dawna marzę o tym, żeby was zobaczyć.",
+"a - Pff...",
+"Stasiek głośno wzdycha. Atmosfera w aucie robi się niezwykle napięta. Aśka, po dłuższym milczeniu, odzywa się wreszcie. Jej głos zdradza niezadowolenie.",
+"a - Odwieźmy ją do domu, więcej z nią nie wytrzymam.",
+"jump fine",
 ],
 
 "4A28-50":
@@ -1626,11 +1641,18 @@ Wariacja wątku zdrady, Asia sama idzie nad wodę, ty szybko nudzisz się rozsta
 "a - Ale zrobimy to po zmroku, przy ognisku.",
 "Potakujesz głową, a Stasiek wydaje z siebie głośne mruknięcie, które odbierasz za subtelny brak zastrzeżeń do tego planu. Asia odwraca się do ciebie i przygląda uważnie. Nie umiesz odczytać jej wyrazu twarzy, wydaje się być kompletnie obojętna.",
 "a - Ale mam jeden warunek...Skoro mam być naga i Stasiek ma się rozebrać, to ty też musisz.",
-//1. - W porządku, rozbiorę się.
-//2. - Dobrze, ale ty mnie rozbierzesz, a ja rozbiorę ciebie.
-
-//Docieracie na miejsce, opis miejsca, wybór czy się ubrać czy nie, idziecie do wody, czy nie, skip do ogniska?
-
+	{
+			"Choice": {
+				"4A28-72": {
+				"Text": " - W porządku, rozbiorę się.",
+				"Do":"jump 4A28-72",
+			},
+				"4A28-73": {
+				"Text": " - Ja rozbiorę ciebie, a ty mnie.",
+				"Do":"jump 4A28-73",
+			},
+		},
+	},
 ],
 
 "4A28-51":
@@ -1838,10 +1860,33 @@ Wchodzicie do wody, pocałunek w wodzie?
 4A28-69
 2. - Masz zajebiste cycki. ( - Twoje cycki wyglądają zajebiście!)
 //podekscytowana, półszeptem, uśmiechając się
-4A28-
-4A28-
-4A28-
-4A28-
+4A28-70
+Palce w Majtki
+jump Fine
+
+4A28-71
+Subtelnie palec do ust.
+
+
+4A28-72
+//1. - W porządku, rozbiorę się.
+
+
+//Docieracie na miejsce, opis miejsca, zostajesz w samych majtkach, non stop ich kusisz.
+ idziecie do wody,
+  czy nie,
+	skip do ogniska?
+
+4A28-73
+
+//2. - Dobrze, ale ty mnie rozbierzesz, a ja rozbiorę ciebie.
+
+///Docieracie na miejsce, opis miejsca, zostajesz w samych majtkach, non stop ich kusisz.
+ idziecie do wody,
+  czy nie,
+	skip do ogniska?
+
+
 4A28-
 4A28-
 4A28-
