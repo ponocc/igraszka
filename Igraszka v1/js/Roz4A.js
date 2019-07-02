@@ -27,6 +27,7 @@ script["Roz4A"] = [
 
 
 //Stas
+
 "4A16":
 [
 "Najpierw spada ci lewe ramiączko, potem prawę. Stasiek cały czas zerka do ciebie, zaczyna się też odrobinę wiercić. Aśka nie widzi twych subtelnych ruchów.",
@@ -787,8 +788,7 @@ Wariacja wątku zdrady, Asia sama idzie nad wodę, ty szybko nudzisz się rozsta
 "Asia odwraca się w twoją stronę, wygląda na lekko podekscytowaną i zarumienioną.",
 "i - Tak, jeziora. I twoich cycków.",
 "a - A skąd pewność, że je zobaczysz?",
-"Nie odpowiadasz tylko opierasz się wygodnie na tylnym siedzeniu i spogdlądasz jej w oczy z uśmiechem.",
-"wait 1000",
+"Obie wybuchacie śmiechem. Uznajesz to za pytanie retoryczne i nie odpowiadasz, tylko opierasz się wygodnie na tylnym siedzeniu i kilka razy spogdlądasz jej w oczy z uśmiechem.",
 "Po niecałych 10 mintuach docieracie na miejsce. Jest to nieduża polanka, do której prowadzi mało uczęszczana, leśna droga. 'Plaża' to jest po prostu kilka metrów brzegu bez trzciny.",
 " - Znaleźliśmy to miejsce na jakimś forum, wygląda trochę inaczej niż na fotkach.",
 "Odzywa się Aśka, gdy parkujecie. Wysiadacie i Stasiek zabiera się za rozpakowywanie rzeczy z bagażnika, podczas gdy ty i Asia wybieracie miejsce na namioty.",
@@ -899,20 +899,33 @@ Wariacja wątku zdrady, Asia sama idzie nad wodę, ty szybko nudzisz się rozsta
 "Dziewczyna kręci głową przecząco, jednocześnie chichocząc cicho.",
 " - No nie żartuj? Stasiek na pewno też już nie może wytrzymać.",
 "Już wcześniej zauważyłaś, że auto zauważalnie zwolniło. Na dźwięk swojego imienia chłopak ostrożnie spojrzał we wstrzeczne lusterko i potarł dłonią czubek swojej głowy. Aśka spogląda na niego przez chwilę, nie reagując na działania twojej dłoni. W koncu zsuwasz ramiączko jej sukienki wzdłuż ramienia.  w końcu nie stawia oporu i powoli się rozbiera. Ściąga sukienkę i, choć o tym nie mówiłaś, stanik.",
-1. Złap ją za cycek bez pytania
-2. - Masz zajebiste cycki. ( - Twoje cycki wyglądają zajebiście!)
+	{
+			"Choice": {
+				"4A28-65": {
+				"Text": "Złap ją za cycki.",
+				"Do":"jump 4A28-65",
+			},
+				"4A28-69": {
+				"Text": " - Masz zajebiste cycki.",
+				"Do":"jump 4A28-69",
+			},
+		},
+	},
 ],
 
-4A28-47
-1. - Teraz cię wyruchamy.
-Mówisz zdecydowanie, przesuwając się do przodu, tak że twoja głowa znajduje się pomiędzy fotelami.
-s - Tutaj? Na środku drogi?
-a - Serio? Pojebało was? To cie obchodzi, że jesteśmy na środku drogi, a nie to że ona proponuej seks?
-s - Ale to od miasta było widać, że jest napalona.
-a - Co z tego?
-i - Przestańcie, nie kłódzcie się. Możecie zrobić ze mną co chcecie.
-Zaczynasz dotykać swoich piersi.
+"4A28-47":
+[
+"i - Teraz cię wyruchamy.",
+"Mówisz zdecydowanym tonem, przesuwając się do przodu, tak że twoja głowa znajduje się pomiędzy fotelami.",
+"s - Tutaj? Na środku drogi?",
+"a - Serio? Pojebało was? To cie obchodzi, że jesteśmy na środku drogi, a nie to że ona proponuej seks?",
+"s - Ale to od miasta było widać, że jest napalona.",
+"a - No i co z tego?",
+"Asia ma zirytowaną minę, jej wzrok świdruje twarz Staśka, która pozostaje w bezruchu, zapatrzona w drogę.",
+"i - Przestańcie, nie kłóćcie się. Możecie zrobić ze mną co chcecie.",
+"Przesuwasz się z powrotem do tyłu, opierając wygodnie plecy o kanapę. Jednocześnie, zaczynasz dotykać swoich piersi, ściskająć je mocno po kilka razy.",
 
+],
 
 4A28-48
 2. - Teraz mnie wyruchaj, już nie mogę wytrzymać.
@@ -991,7 +1004,7 @@ Ty wysiadasz ostatnia, nadal gołe cycki. Oboje się na ciebie patrzą.
 
  - Zakładasz tylko stanik i wychodzisz z auta w bieliźnie. (Zakładasz swój stanik i zabierasz się za wypakowywanie rzeczy z auta w bieliźnie. Oboje wciąz się na ciebie patrzą, szczególnie stasiek. Szybko się pocisz bo jest okropnie gorąco. 1. Pytasz czy asia idzie z tobą do wody. 2. Bez pytania idziesz do wody sama. )
 
- - Zakładasz tylko sukienkę, zostawiając stanik w samochodzie. (W milczeniu rozstawiacie namioty. sia po dłuższej chwili się poddaje i idzie w stronę wody:1. Idziesz bez pytania. 2 Pytasz czy możęsz z nią iść.)
+ - Zakładasz tylko sukienkę, zostawiając stanik w samochodzie. (W milczeniu rozstawiacie namioty. Asia po dłuższej chwili się poddaje i idzie w stronę wody:1. Idziesz bez pytania. 2 Pytasz czy możęsz z nią iść.)
 
  - idziesz W samych majtkach go wody. (Docierasz do brzegu i zanurzasz delikatnie stopę. Woda jest przyjemnie chłodna. 1. ściągasz majtki i powoli wchodzisz do jeziora. 2. Wchodzisz do jeziora w samych majtkach.)
 
@@ -1059,7 +1072,7 @@ Wchodzicie do wody, pocałunek w wodzie?
 
 "a - Ty pierwsza."
 
-4A28-64
+"4A28-64":
 //Nie mogłaś się doczekać, jesteś topless, Asia jest ubrana. zmodyfikować to do sugestii że ma wejść naga lub tylko w majtkach. Śmieszkują cały czas. Jump from 4A28-40 oraz 42
 
 [
@@ -1069,7 +1082,7 @@ Wchodzicie do wody, pocałunek w wodzie?
 "s - Pewka!",
 "Słyszysz głos Staśka gdzieś zza samochodu. Ruszacie w stronę brzegu, Asia idzie obok ciebie i wchodzi prosto do wody, zanużając się do kostek. Szybko oglądasz się za siebie i upewniasz, że zostałyście same.",
 "a - Jest super.",
-"Mówi to z nieukrywaną radośnie. Przez chwilę patrzy na ciebie, a potem znów się odzywa.",
+"Mówi to z nieukrywaną radością. Przez chwilę patrzy na ciebie, a potem znów się odzywa.",
 "a - Eh, jeszcze w tym roku się nie kąpałam.",
 "Następnie wycofuje się na brzeg, ściąga sukienkę, odsłaniając czarny, dwuczęsciowy kostium.",
 "i - Ślicznie wyglądasz.",
@@ -1086,7 +1099,7 @@ Wchodzicie do wody, pocałunek w wodzie?
 "Bez chwili namysłu robisz delikatny obrót o 180 stopni. Dodatkowo lekko pochylasz się do przodu, wypinając swoje pośladki w stronę Aśki, co wywołuje cichy chichot za twoimi plecami. Nagle czujesz delikatny dotyk jej palców na swoich biodrach. Chwytają one twoje majtki i bezceremonialnie, trochę za szybko, ściągają je aż do kolan.",
 "a - Jesteś tak zajebiście zgrabna, ja pierdolę. Chciałabym mieć twoje ciało.",
 "Odwracasz się powoli i natychmiast łapiesz kontakt wzrokowy z Aśką. Robisz krok w jej stronę, tak, że stoicie niemal obok siebie, dotykając się nogami.",
-"i - Możesz mnie mieć w dowolnym momencie.",
+"i - Możesz mieć...",
 "Aśka chichocze cicho, a potem robi mały krok do tyłu, w stronę wody. Jej dłoń chwyta cię za nadgarstek.",
 "a - Chodź, nie mogę już wytrzymać.",
 
@@ -1120,7 +1133,9 @@ Wchodzicie do wody, pocałunek w wodzie?
 4A28-68
  - No weź, stanik ci nie potrzebny.
 
-4A28-
+4A28-69
+2. - Masz zajebiste cycki. ( - Twoje cycki wyglądają zajebiście!)
+//podekscytowana, półszeptem, uśmiechając się
 4A28-
 4A28-
 4A28-
