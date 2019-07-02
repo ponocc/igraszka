@@ -1663,7 +1663,10 @@ Wariacja wątku zdrady, Asia sama idzie nad wodę, ty szybko nudzisz się rozsta
 "s - Ja myślę, że warto o tym porozmawiać jak już będziemy...",
 "a - Tak. Muszę to przemyśleć.",
 "Asia przerywa mu spokojnym, acz bardzo zdecydowanym głosem. Zapada nieznośna cisza, która zaczyna cię okropnie krępować. Stasiek co chwile spogląda na ciebie i twoje nagie piersi, ale tobie zupełnie to nie przeszkadza, a nawet trochę kręci.",
-//Docieracie na miejsce, opis miejsca, rozstawianie namiotu. Idziecie do wody, nadal jesteś w samych majtkach, aśka rozbiera się od razu do stroju.
+"Po niecałych 10 mintuach docieracie na miejsce. Jest to nieduża polanka, do której prowadzi mało uczęszczana, leśna droga. 'Plaża' to jest po prostu kilka metrów brzegu bez trzciny.",
+"a - Znaleźliśmy to miejsce na jakimś forum, wygląda trochę inaczej niż na fotkach.",
+"Odzywa się Aśka, gdy parkujecie. Postanawiasz się nie ubierać i wysiadasz z samochodu w samcyh majtkach. Stasiek rzuca krótkie spojrzenie na twój nagi biust i zabiera się za wypakowywanie rzeczy z bagażnika. Razem z Aśką wybieracie miejsce na namioty, szukając równej powierzchni z odrobiną cienia. Dziewczyna zdaje się nie zwracać większej uwagi na twoje ciało.",
+""
 
 ],
 "4A28-52":
