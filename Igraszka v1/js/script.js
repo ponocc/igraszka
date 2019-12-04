@@ -888,7 +888,7 @@ let script = {
 "i - Mogłabyś paradować bez stanika.",
 "a - Daj spokój, nie chcę cię krępować.",
 "W tym momencie przesuwasz palec, chwytasz krawędź stanika i zsuwasz go całkowicie w dół, eksponując biust.",
-"i - Ja was się nie krępuję.",
+"i - Ja się was nie krępuję.",
 "Mówisz śmiało, lekko chichocząc. Aśka delikatnie odwraca się w twoją stronę i gdy zauważa twoje nagie piersi, natychmiast się płoszy.",
 {
 		"Choice": {
@@ -1628,16 +1628,18 @@ Będziemy się podtapiać. Żart nietrafiony.
 ],
 
 
-/*
+
 //Spontaniczna zmiana zeznań prowadzi do kąpieli we troje.
 
 "4A32":
+[
+"W takim razie mam propozycję. Jak tylko dojedziemy na miejsce to do razu wskakujemy do wody!",
+"s - W ubraniach?",
+"Asia zaczyna się głośno śmiać, od razu do niej dołączasz.",
+"i - Możesz w ubraniu."
+],
 
-W takim razie mam propozycję. Jak tylko dojedziemy na miejsce to do razu wskakujemy do wody!
-s - W ubraniach?
-Asia zaczyna się głośno śmiać, od razu do niej dołączasz.
-i - Możesz w ubraniu.
-
+/*
 "4A33":
 No i co teraz? Staś nie ma stroju.
 s - No nie wiem właśnie. Wyglada na to, że tylko Aś się przygotowała należycie
