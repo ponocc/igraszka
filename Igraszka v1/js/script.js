@@ -1636,16 +1636,19 @@ Będziemy się podtapiać. Żart nietrafiony.
 "W takim razie mam propozycję. Jak tylko dojedziemy na miejsce to do razu wskakujemy do wody!",
 "s - W ubraniach?",
 "Asia zaczyna się głośno śmiać, od razu do niej dołączasz.",
-"i - Możesz w ubraniu."
+"i - Możesz w ubraniu.",
+"Chłopak tylko uśmiecha się subtelnie, ale nic nie mówi i nie reaguje. Masz wrażenie, że nie do końca zrozumiał twoje słowa.",
 ],
 
 /*
 "4A33":
-No i co teraz? Staś nie ma stroju.
-s - No nie wiem właśnie. Wyglada na to, że tylko Aś się przygotowała należycie
-i - Czyli tylko Aśka się kąpie.
-a - Możecie popływać w bieliźnie przecież.
-i - Albo nago.
+[
+"No i co teraz? Staś nie ma stroju.",
+"s - No nie wiem właśnie. Wyglada na to, że tylko Aś się przygotowała należycie",
+"i - Czyli tylko Aśka się kąpie.",
+"a - Możecie popływać w bieliźnie przecież.",
+"i - Albo nago.",
+],
 
 
 
