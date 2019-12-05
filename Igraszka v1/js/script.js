@@ -736,6 +736,217 @@ let script = {
 },
 ],
 
+//Spontaniczna zmiana zeznań
+"4A18":
+[
+"s - Yy... No muszę sprawdzić jeszcze, może rzeczywiście go nie spakowałem.",
+"Stasiek jest wyraźnie zakłopotany, co sprawia, że Aśka zaczyna uroczo chichotać.",
+"a - Cudowna zmiana zeznań.",
+{
+		"Choice": {
+			"4A32": {
+			"Text": " - W takim razie - mam propozycję.",
+			"Do":"jump 4A32",
+		},
+			"4A33": {
+			"Text": " - No i co teraz?",
+			"Do":"jump 4A33",
+		},
+	},
+},
+
+],
+
+"4A19":
+[
+"a	- No możemy pójść, mi to nie przeszkadza. A nie chcesz się pływać w bieliźnie? Na słońcu powinna szybko wyschnąć.",
+"Aśka odwraca się w twoją stronę i delikatnie uśmiecha.",
+{
+		"Choice": {
+			"4A20": {
+			"Text": " - Nie, bo i tak potem będę musiała latać bez majtek, dopóki nie wyschną.",
+			"Do":"jump 4A20",
+		},
+			"4A19": {
+			"Text": " - Szkoda mi ją moczyć, jest za fajna i ładna i w ogóle.",
+			"Do":"jump 4A21",
+		},
+	},
+},
+],
+"4A20":
+[
+"s	- No spoko, jak chcesz. Zaraz będziemy.",
+"Po chwili docieracie na miejsce. Jest to nieduża polanka, do której prowadzi mało uczęszczana, leśna droga. 'Plaża' to jest po prostu kilka metrów brzegu bez trzciny.",
+"a - Znaleźliśmy to miejsce na jakimś forum, wygląda trochę inaczej niż na fotkach.",
+"Parkujecie w cieniu, Stasiek wyciąga rzeczy z bagażnika i wybieracie miejsce na namioty. Aśka spogląda na ciebie życzliwie i pokazuje palcem jezioro.",
+ {
+ 		"Choice": {
+ 			"4A34": {
+ 			"Text": "Idziesz z Aśką zobaczyć jaka jest woda.",
+ 			"Do":"jump 4A34",
+ 		},
+ 			"4A35": {
+ 			"Text": "Zostajesz przy aucie i próbujesz rozstawić namiot.",
+ 			"Do":"jump 4A35",
+ 		},
+ 	},
+ },
+],
+
+"4A21":
+[
+"s	- No to ja zostanę na brzegu, a wy we dwie pójdziecie popływać gdzieś indziej. Może być?",
+"Stasiek spogląda na swoją dziewczynę. Ona się tylko uśmiecha i siedzi cicho.",
+"s - Jezioro jest duże, można w nim pływać na golasa.",
+"a - A ty będziesz siedział i patrzył?",
+"s - Namiot rozstawię...",
+{
+		"Choice": {
+			"4A27": {
+			"Text": "W porządku, poradzę sobie.",
+			"Do":"jump 4A27",
+		},
+	},
+},
+],
+
+"4A22":
+[
+"Aśka reaguje bardzo radośnie, niemal podskakuje w miejscu. Po kilku dłuższych chwilach docieracie na miejsce. Jest to nieduża polanka, do której prowadzi mało uczęszczana, leśna droga. 'Plaża' to jest po prostu kilka metrów brzegu bez trzciny.",
+"a - Znaleźliśmy to miejsce na jakimś forum, wygląda trochę inaczej niż na fotkach.",
+"s - Nie jest tak źle.",
+"a - No tak, zawsze mogło być mniej drzew i piasku.",
+"Parkujecie w cieniu, Stasiek wyciąga rzeczy z bagażnika i wybieracie miejsce na namioty. Aśka spogląda na ciebie życzliwie i pokazuje palcem jezioro.",
+	{
+		 "Choice": {
+			 "4A34": {
+			 "Text": "Idziesz z Aśką zobaczyć jaka jest woda.",
+			 "Do":"jump 4A34",
+	 		},
+		},
+	},
+],
+
+"4A23":
+[
+"a - Oj, okej, no dobrze.",
+"Dziewczyna wygląda na zawiedzioną, uchodzi z niej cała ekscytacja.",
+"Resztę drogi pokonujecie w milczeniu, towarzyszy wam jedynie świst powietrza wpadającego przez opuszczone szyby. Po chwili docieracie na miejsce. Jest to nieduża polanka, do której prowadzi mało uczęszczana, leśna droga. 'Plaża' to jest po prostu kilka metrów brzegu bez trzciny.",
+"a - Znaleźliśmy to miejsce na jakimś forum, wygląda trochę inaczej niż na fotkach.",
+"s - Nie jest tak źle.",
+"a - No tak, zawsze mogło być mniej drzew i piasku.",
+"Parkujecie w cieniu, Stasiek wyciąga rzeczy z bagażnika i wybieracie miejsce na namioty.",
+	{
+		 "Choice": {
+			 "4A34": {
+			 "Text": "Jednak idziesz z Aśką zobaczyć jaka jest woda.",
+			 "Do":"jump 4A36",
+		 },
+			 "4A35": {
+			 "Text": "Próbujesz rozstawić namiot.",
+			 "Do":"jump 4A35",
+		 },
+	 },
+	},
+],
+
+
+
+"4A24":
+[
+"i - Macać pod wodą.",
+"Asia szybko dostrzega twój żart i od razu go podłapuje.",
+"a - O tak, nie mogę się doczekać kiedy wyściskam te cycuszki.",
+"Dziewczyna odwraca się do ciebie i uśmiecha, wystawiająć żartobliwie język. Odwazjemniasz uśmiech.",
+{
+  "Choice": {
+    "4000": {
+    "Text": "Złap się za piersi i spytaj czy naprawdę jej się podobają.",
+    "Do":"jump 4000",
+  },
+    "4001": {
+    "Text": "Przygryź wargę i popraw włosy.",
+    "Do":"jump 4001",
+  },
+},
+}
+],
+
+
+//wątek morderstwa
+"4A25":
+[
+"i - Będziemy się podtapiać.",
+"Radosne odgłosy szybko ustają. Twoi przyjaciele nagle przestają się odzywać, wyraźnie czujesz niesmak wiszący w powietrzu.",
+{
+  "Choice": {
+    "4002": {
+    "Text": "Docieracie na miejsce w milczeniu.",
+    "Do":"jump 4002",
+  },
+},
+}
+],
+
+
+"4A26":
+[
+"i - Może jak nauczysz się pływać, to pozwolimy ci się przekonać.",
+"Mówisz to radośnie, a Asia zaczyna się głośno śmiać.",
+"a - No może takiej motywacji potrzebujesz, co?",
+"s - To w ogóle nie jest śmieszne.",
+"a - Oczywiście że jest.",
+"Mówicie to niemal jednocześnie, co powoduje kolejny wybuch śmiechu. Nawet Stasiek się uśmiecha.",
+{
+  "Choice": {
+    "4003": {
+    "Text": "- Ja cię chętnie zmotywuję.", //wątek nietrafiony
+    "Do":"jump 4003",
+  },
+    "4004": {
+    "Text": " - Chyba nie masz wyjścia i musisz wejść z nami do wody.", //wątek troje w wodzie
+    "Do":"jump 4004",
+  },
+},
+}
+
+],
+
+ //Wstydliwe rozwiązanie
+
+"4A27":
+[
+"Resztę drogi pokonujecie w milczeniu, towarzyszy wam jedynie świst powietrza wpadającego przez opuszczone szyby. Po chwili docieracie na miejsce. Jest to nieduża polanka, do której prowadzi mało uczęszczana, leśna droga. 'Plaża' to jest po prostu kilka metrów brzegu bez trzciny.",
+"a - Znaleźliśmy to miejsce na jakimś forum, wygląda trochę inaczej niż na fotkach.",
+"Parkujecie w cieniu, Stasiek wyciąga rzeczy z bagażnika i wybieracie miejsce na namioty. Aśka spogląda na ciebie życzliwie i pokazuje palcem jezioro.",
+{
+	 "Choice": {
+		 "4A34": {
+		 "Text": "Idziesz z Aśką zobaczyć jaka jest woda.",
+		 "Do":"jump 4A34",
+	 },
+		 "4A35": {
+		 "Text": "Zostajesz przy aucie i próbujesz rozstawić namiot.",
+		 "Do":"jump 4A35",
+	 },
+ },
+},
+],
+
+
+
+
+
+//
+//
+// 4A 28 Szybko wątek?
+//
+//
+
+
+
+
 "4A28":
 [
 "Przechyl się nieco do przodu, upewniając się, że chłopak widzi jak miseczki stanika powoli odsłaniają twoje cycki. Widzisz, że Staś cały czas się ci przygląda. Palcem wskazującym powoli przesuwasz kilka razy po swoim obojczyku, a następnie schodzisz nim niżej, dotykając sutka. Wciaż jest on zakryty przez twój czarny stanik, ale ekscytacja na twarzy Stasia staje się coraz wyraźniejsza.",
@@ -1233,12 +1444,33 @@ let script = {
 	},
 ],
 
-/*
+
 "4A28-29":
-i - Wyskakuj z sukienki.
+[
+"i - No to wyskakuj z sukienki.",
+"Aśka zaczyna się śmiać. Patrzy na ciebie przez chwilę badawczo, jakby chciała się upewnić czy tylko żartujesz, czy jesteś poważna. Wreszcie unosi się lekko, rozpina sukienkę i zaczyna ją z siebie zsuwać.",
+{
+		"Choice": {
+			"4005": {
+			"Text": "Pomóż jej zdjąć ubranie.",
+			"Do":"jump 4005",
+		},
+			"4006": { 
+			"Text": "Przyglądaj się z uśmiechem.",
+			"Do":"jump 4006",
+		},
+	},
+},
+]
 
 "4A28-30":
-i - Pokaż mi swój strój
+"i - Pokażesz mi swój strój?",
+"a - Jest zwyczajny. Czarne bikini.",
+"i - Napewno dobrze na tobie leży. Masz takie zgrabne ciało.",
+"Asia zaczyna się śmiać i kręci przecząco głową.",
+"i - No to pokażesz, czy nie?",
+"a - Zaraz dojedziemy na miejsce.",
+"jump 4A27",
 
 4A28-31
 Spróbuj się wytłumaczyć.
@@ -1308,6 +1540,7 @@ Jump na miejscu.
 
 4A28-39
 "i - Może przesiądziesz się do tyłu?",
+
 4A28-40
 "i - Nie mogę się doczekać, aż będziemy na miejscu.",
 
@@ -1336,6 +1569,10 @@ i - No dobrze.
 
 
 
+
+
+
+
 	{
 			"Choice": {
 				"4A28- ": {
@@ -1350,6 +1587,18 @@ i - No dobrze.
 	},
 
 */
+
+
+
+
+
+
+//
+//
+//Koniec szybkiego wątku nr 28
+//
+//
+
 
 
 "4A29":[
@@ -1401,236 +1650,55 @@ i - No dobrze.
 "Wypadacie z drogi. Auto zatrzymuje się na drzewie. Gaśnie światło.",
 "jump fine", //KONIEC
 ],
+
 /*
 4A29-4
 "i - Możemy stanąć, chętnie popatrzę jak się za ciebie bierze.",
 4A29-5
 "i - Możemy stanąć, Stasiek chyba więcej nie wytrzyma.",
+
 4A29-
 4A29-
 
 */
 
+
+
+//macanki w aucie
 "4A30":
 [
-"Aśka zaczyna się śmiać. Patrzy na ciebie przez chwilę badawczo, jakby chciała się upewnić czy tylko żartujesz, czy jesteś poważna. Wreszcie unosi się lekko, rozpina sukienkę i zsuwa ją z siebie.",
+"Aśka zaczyna się śmiać. Patrzy na ciebie przez chwilę badawczo, jakby chciała się upewnić czy tylko żartujesz, czy jesteś poważna. Wreszcie unosi się lekko, rozpina sukienkę i zaczyna ją z siebie zsuwać.",
 {
 		"Choice": {
-			"4A  ": {
-			"Text": " ",
-			"Do":"jump 4A  ",
+			"4005": {
+			"Text": "Pomóż jej zdjąć ubranie.",
+			"Do":"jump 4005",
 		},
-			"4A  ": {
-			"Text": " ",
-			"Do":"jump 4A  ",
+			"4006": {
+			"Text": "Przyglądaj się z uśmiechem.",
+			"Do":"jump 4006",
 		},
 	},
 },
 ],
-/*
-Pomóż jej ściągnąć ubranie.
 
-Przyglądaj się z uśmiechem.
-*/
 
 "4A31":
 [
 "a - Jest zwyczajny. Czarne bikini.",
 "i - Napewno dobrze na tobie leży. Masz takie zgrabne ciało.",
 "Asia zaczyna się śmiać i kręci przecząco głową.",
-
-//No to pokażesz czy nie?
+"i - No to pokażesz, czy nie?",
+"a - Zaraz dojedziemy na miejsce.",
+"jump 4A27",
 ],
-
-
-
-
-
-
 
 
 //koniec szybkiego wątku
 
 
-
-
-
-
-
-
-
-
 //Spontaniczna zmiana zeznań
-
-"4A18":
-[
-"s - Yy... No muszę sprawdzić jeszcze, może rzeczywiście go nie spakowałem.",
-"Stasiek jest wyraźnie zakłopotany, co sprawia, że Aśka zaczyna uroczo chichotać.",
-"a - Cudowna zmiana zeznań.",
-{
-		"Choice": {
-			"4A32": {
-			"Text": " - W takim razie - mam propozycję.",
-			"Do":"jump 4A32",
-		},
-			"4A33": {
-			"Text": " - No i co teraz?",
-			"Do":"jump 4A33",
-		},
-	},
-},
-
-],
-
-"4A19":
-[
-"a	- No możemy pójść, mi to nie przeszkadza. A nie chcesz się pływać w bieliźnie? Na słońcu powinna szybko wyschnąć.",
-"Aśka odwraca się w twoją stronę i delikatnie uśmiecha.",
-{
-		"Choice": {
-			"4A20": {
-			"Text": " - Nie, bo i tak potem będę musiała latać bez majtek, dopóki nie wyschną.",
-			"Do":"jump 4A20",
-		},
-			"4A19": {
-			"Text": " - Szkoda mi ją moczyć, jest za fajna i ładna i w ogóle.",
-			"Do":"jump 4A21",
-		},
-	},
-},
-],
-"4A20":
-[
-"s	- No spoko, jak chcesz. Zaraz będziemy.",
-"Po chwili docieracie na miejsce. Jest to nieduża polanka, do której prowadzi mało uczęszczana, leśna droga. 'Plaża' to jest po prostu kilka metrów brzegu bez trzciny.",
-"a - Znaleźliśmy to miejsce na jakimś forum, wygląda trochę inaczej niż na fotkach.",
-"Parkujecie w cieniu, Stasiek wyciąga rzeczy z bagażnika i wybieracie miejsce na namioty. Aśka spogląda na ciebie życzliwie i pokazuje palcem jezioro.",
- {
- 		"Choice": {
- 			"4A34": {
- 			"Text": "Idziesz z Aśką zobaczyć jaka jest woda.",
- 			"Do":"jump 4A34",
- 		},
- 			"4A35": {
- 			"Text": "Zostajesz przy aucie i próbujesz rozstawić namiot.",
- 			"Do":"jump 4A35",
- 		},
- 	},
- },
-],
-
-"4A21":
-[
-"s	- No to ja zostanę na brzegu, a wy we dwie pójdziecie popływać gdzieś indziej. Może być?",
-"Stasiek spogląda na swoją dziewczynę. Ona się tylko uśmiecha i siedzi cicho.",
-"s - Jezioro jest duże, można w nim pływać na golasa.",
-"a - A ty będziesz siedział i patrzył?",
-"s - Namiot rozstawię...",
-{
-		"Choice": {
-			"4A27": {
-			"Text": "W porządku, poradzę sobie.",
-			"Do":"jump 4A27",
-		},
-	},
-},
-],
-
-"4A22":
-[
-"Aśka reaguje bardzo radośnie, niemal podskakuje w miejscu. Po kilku dłuższych chwilach docieracie na miejsce. Jest to nieduża polanka, do której prowadzi mało uczęszczana, leśna droga. 'Plaża' to jest po prostu kilka metrów brzegu bez trzciny.",
-"a - Znaleźliśmy to miejsce na jakimś forum, wygląda trochę inaczej niż na fotkach.",
-"s - Nie jest tak źle.",
-"a - No tak, zawsze mogło być mniej drzew i piasku.",
-"Parkujecie w cieniu, Stasiek wyciąga rzeczy z bagażnika i wybieracie miejsce na namioty. Aśka spogląda na ciebie życzliwie i pokazuje palcem jezioro.",
-	{
-		 "Choice": {
-			 "4A34": {
-			 "Text": "Idziesz z Aśką zobaczyć jaka jest woda.",
-			 "Do":"jump 4A34",
-	 		},
-		},
-	},
-],
-
-"4A23":
-[
-"a - Oj, okej, no dobrze.",
-"Dziewczyna wygląda na zawiedzioną, uchodzi z niej cała ekscytacja.",
-"Resztę drogi pokonujecie w milczeniu, towarzyszy wam jedynie świst powietrza wpadającego przez opuszczone szyby. Po chwili docieracie na miejsce. Jest to nieduża polanka, do której prowadzi mało uczęszczana, leśna droga. 'Plaża' to jest po prostu kilka metrów brzegu bez trzciny.",
-"a - Znaleźliśmy to miejsce na jakimś forum, wygląda trochę inaczej niż na fotkach.",
-"s - Nie jest tak źle.",
-"a - No tak, zawsze mogło być mniej drzew i piasku.",
-"Parkujecie w cieniu, Stasiek wyciąga rzeczy z bagażnika i wybieracie miejsce na namioty.",
-	{
-		 "Choice": {
-			 "4A34": {
-			 "Text": "Jednak idziesz z Aśką zobaczyć jaka jest woda.",
-			 "Do":"jump 4A36",
-		 },
-			 "4A35": {
-			 "Text": "Próbujesz rozstawić namiot.",
-			 "Do":"jump 4A35",
-		 },
-	 },
-	},
-],
-
-/*
-
-"4A24":
-Macać pod wodą. Żart.
-Asia szybko dostrzega twój żart i od razu go podłapuje.
-a - O tak, nie mogę się doczekać kiedy wyściskam te cycuszki.
-Dziewczyna odwraca się do ciebie i uśmiecha, wystawiająć żartobliwie język. Odwazjemniasz uśmiech.
-
-1. Złap się za piersi i spytaj czy naprawdę jej się podobają.
-2. Przygryź wargę i popraw włosy.
-
-//wątek morderstwa
-
-"4A25":
-Będziemy się podtapiać. Żart nietrafiony.
-Śmiech ustaje. Twoi przyjaciele nagle przestają się odzywać. Czujesz niesmak w powietrzu.
-
-1. Docieracie na miejsce w milczeniu.
-
-"4A26":
-  - Może jak nauczysz się pływać, to pozwolimy ci się przekonać.
- Mówisz to radośnie, a Asia zaczyna się głośno śmiać.
- - No może takiej motywacji potrzebujesz, co?
- - To w ogóle nie jest śmieszne.
- - Oczywiście że jest.
- Mówicie to niemal jednocześnie, co powoduje kolejny wybuch śmiechu. Nawet Stasiek się uśmiecha.
-
-1. - Ja cię chętnie zmotywuję. (Nitka nie trafiona.)
-2.  - Chyba nie masz wyjścia i musisz wejść z nami do wody. (Nikta 'we troje w wodzie')
-*/
- //Wstydliwe rozwiązanie
-
-"4A27":
-[
-"Resztę drogi pokonujecie w milczeniu, towarzyszy wam jedynie świst powietrza wpadającego przez opuszczone szyby. Po chwili docieracie na miejsce. Jest to nieduża polanka, do której prowadzi mało uczęszczana, leśna droga. 'Plaża' to jest po prostu kilka metrów brzegu bez trzciny.",
-"a - Znaleźliśmy to miejsce na jakimś forum, wygląda trochę inaczej niż na fotkach.",
-"Parkujecie w cieniu, Stasiek wyciąga rzeczy z bagażnika i wybieracie miejsce na namioty. Aśka spogląda na ciebie życzliwie i pokazuje palcem jezioro.",
-{
-	 "Choice": {
-		 "4A34": {
-		 "Text": "Idziesz z Aśką zobaczyć jaka jest woda.",
-		 "Do":"jump 4A34",
-	 },
-		 "4A35": {
-		 "Text": "Zostajesz przy aucie i próbujesz rozstawić namiot.",
-		 "Do":"jump 4A35",
-	 },
- },
-},
-],
-
-
-
-//Spontaniczna zmiana zeznań prowadzi do kąpieli we troje.
-
+//Prowadzi do wątku 'troje w wodzie'
 "4A32":
 [
 "W takim razie mam propozycję. Jak tylko dojedziemy na miejsce to do razu wskakujemy do wody!",
@@ -1638,26 +1706,52 @@ Będziemy się podtapiać. Żart nietrafiony.
 "Asia zaczyna się głośno śmiać, od razu do niej dołączasz.",
 "i - Możesz w ubraniu.",
 "Chłopak tylko uśmiecha się subtelnie, ale nic nie mówi i nie reaguje. Masz wrażenie, że nie do końca zrozumiał twoje słowa.",
+"jump 4004"
 ],
 
-/*
 "4A33":
 [
-"No i co teraz? Staś nie ma stroju.",
+"i - No i co teraz? Staś nie ma stroju.",
 "s - No nie wiem właśnie. Wyglada na to, że tylko Aś się przygotowała należycie",
 "i - Czyli tylko Aśka się kąpie.",
 "a - Możecie popływać w bieliźnie przecież.",
 "i - Albo nago.",
+"Aśka delikatnie odwaraca się w twoją stronę.",
+"a - Nie wiedziałam, że jesteś taka odważna.",
+{
+  "Choice": {
+    "4007": {
+    "Text": "",
+    "Do":"jump 4007",
+  },
+    "4008": {
+    "Text": "",
+    "Do":"jump 4008",
+  },
+},
+},
 ],
 
-
-
 "4A34":
-- Idziemy obczaić wodę. Poradzisz sobie?
- - Pewka. - Chłopak odpowiada i dalej ogarnia namiot.
-Asia idzie obok Ciebie tych kilkanaście kroków i wchodzi prosto do wody, zanużając się do kostek.
- - Jest super. - Mówi radośnie. Przez chwilę patrzy na ciebie, a potem znów się odzywa. - Eh, jeszcze w tym roku się nie kąpałam.
-Wycofuje się znowu na brzeg, ściąga sukienkę, odsłaniając czarny, dwuczęsciowy kostium.
+"a - Idziemy obczaić wodę. Poradzisz sobie?",
+"s - Pewka.",
+"Ruszacie z uśmiechami na twarzach. Asia idzie obok Ciebie tych kilkanaście kroków i wchodzi prosto do wody, zanużając się do kostek.",
+"a - Jest super. - Mówi radośnie. Przez chwilę patrzy na ciebie, a potem znów się odzywa. - Eh, jeszcze w tym roku się nie kąpałam.",
+"Wycofuje się znowu na brzeg, ściąga sukienkę, odsłaniając czarny, dwuczęsciowy kostium.",
+{
+  "Choice": {
+    "4": {
+    "Text": "Też ściągasz sukienkę.",
+    "Do":"jump 4",
+  },
+    "4": {
+    "Text": "Czekasz.",
+    "Do":"jump 4",
+  },
+},
+},
+
+
 
 "4A35":
 Zostajesz z namiotem, a Asia nie chce isc sama. Nalega.
@@ -1668,44 +1762,64 @@ Asia krząta się przez moment przy aucie, pomagając Staśkowi z rozpakowywanie
 "4A36":
 Jednak idziesz nad wodę z Aśką. Jest ci wdzięczna.
 
-"4A37":
 
 
 
+//nowa numeracja
 
-
-
-
-
-
-
-
-
-//copypaste
+//kuszenie? 4A24
+"4000":
 [
-"				"
+  Złap się za piersi i spytaj czy naprawdę jej się podobają
+],
+
+//kuszenie? 4A24
+"4001":
+[
+  Przygryź wargę i popraw włosy.
+],
+
+//wątek morderstwa
+"4002":
+[
+  Docieracie na miejsce w milczeniu.
+],
+
+//Niesmaczny żart
+"4003":
+[
+  Ja cię chętnie zmotywuję.
+],
+
+//Troje w wodzie
+"4004":
+[
+"i - Chyba nie masz wyjścia i musisz wejść z nami do wody.",
+"s - Niczego nie obiecuje.",
+"Atmosfera w aucie bardzo się rozluźnia. Asia nie może przestać się śmiać.",
+],
+
+//macanki w aucie
+"4005":
+[
+"Kładziesz rękę na ramieniu Aśki, proponując swoją pomoc.",
+"Aśka mówi, że sama sobie poradzi, a następnie zrzuca ramiączka na bok i powoli przesuwa sukienkę w dół, odsłaniajac czarny stanik. Przyglądasz jej się z uśmiechem. Dolna część stroju ma taki sam kolor i normalny krój.",
+
+1. Bez pytania złap ją za cycuszki
+2. Myślałam, że będzie bardziej... skąpy.
 
 ],
 
+//macanki w aucie
+"4006":
+"Asia rzuca ramiączka na bok i powoli przesuwa sukienkę w dół, odsłaniajac czarny stanik. Dolna część stroju jest w takim samym kolorze.",
+"Obie uśmiechacie się do siebie, poniekąd ignorując obecność kierowcy.",
+1. Bez pytania złap ją za cycuszki
+2. - Pływałaś kiedyś nago? - Spytaj, wkazując na jej stanik.
 
-{
-		"Choice": {
-			"4A  ": {
-			"Text": " ",
-			"Do":"jump 4A  ",
-		},
-			"4A  ": {
-			"Text": " ",
-			"Do":"jump 4A  ",
-		},
-	},
-},
+"4007":
 
-*/
-
-
-
-
+"4008":
 
 
 
@@ -1749,3 +1863,4 @@ Jednak idziesz nad wodę z Aśką. Jest ci wdzięczna.
 ],
 
 };
+
