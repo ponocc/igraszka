@@ -1451,43 +1451,52 @@ let script = {
 "Aśka zaczyna się śmiać. Patrzy na ciebie przez chwilę badawczo, jakby chciała się upewnić czy tylko żartujesz, czy jesteś poważna. Wreszcie unosi się lekko, rozpina sukienkę i zaczyna ją z siebie zsuwać.",
 {
 		"Choice": {
-			"4005": {
+			"4A28-44": {
 			"Text": "Pomóż jej zdjąć ubranie.",
-			"Do":"jump 4005",
+			"Do":"jump 4A28-44",
 		},
-			"4006": { 
+			"4A28-45": {
 			"Text": "Przyglądaj się z uśmiechem.",
-			"Do":"jump 4006",
+			"Do":"jump 4A28-45",
 		},
 	},
 },
-]
+],
 
 "4A28-30":
+[
 "i - Pokażesz mi swój strój?",
 "a - Jest zwyczajny. Czarne bikini.",
+"Dziewczyna delikatnie zerka na twój nagi biust, jest wyraźnie zakłopotana",
 "i - Napewno dobrze na tobie leży. Masz takie zgrabne ciało.",
 "Asia zaczyna się śmiać i kręci przecząco głową.",
 "i - No to pokażesz, czy nie?",
-"a - Zaraz dojedziemy na miejsce.",
-"jump 4A27",
+"a - Zaraz, tylko dojedziemy na miejsce.",
+"jump 4A28-46",
+],
 
-4A28-31
-Spróbuj się wytłumaczyć.
-i - Bo... ja od bardzo dawna o was myślę. Jestem...
-Przerywasz na chwilę, spoglądasz na moment na twarz Aśki a następnie szybko uciekasz wzrokiem za okno.
-i - Nie byłam od dawna, z kimś, w łóżku. Ciągle o was myślę.
-generalnie smutne tony
-osłaniaasz swoje ciało, bo jesteś naga
-4A28-32
-Zawstydzasz się, kurczowo osłaniając swoje ciało. Jest ci głupio, czujesz się podle, najchętniej byś wysiadła. Powtarzasz kilka razy przepraszam, widzisz niezadowoloenie i złość na twarzy Aśki.
+"4A28-31"://Spróbuj się wytłumaczyć.
+[
+"i - Bo... ja od bardzo dawna o was myślę. Jestem...",
+"Przerywasz na chwilę, spoglądasz na moment na twarz Aśki a następnie szybko uciekasz wzrokiem za okno.",
+"i - Nie byłam od dawna, z kimś, w łóżku. Ciągle o was myślę.",
+"Przyciskasz sukienkę mocniej do swojego ciała, nadal próbujące nieporadnie je zasłonić.",
+"jump 4A28-47",
+],
 
-Resztę drogi pokonujecie w milczeniu.
-jump na miejscu
+"4A28-32"://Zawstydź się
+[
+"Zawstydzasz się, kurczowo osłaniając swoje ciało. Jest ci głupio, czujesz się podle, najchętniej byś wysiadła. Powtarzasz kilka razy przepraszam, widzisz niezadowolenie i złość na twarzy Aśki.",
+"Nigdy nie było ci tak głupio.",
+"i - Przepraszam.",
+"jump 4A28-48",
+],
 
-4A28-33
-Resztę drogi pokonujecie w milczeniu.
-Jump na miejscu.
+"4A28-33": //Jesteś ubrana, bez sukienki
+[
+"Wierzchem dłoni wycierasz pot z czoła, a następnie zaplatasz ręce tuż pod piersiami. Atmosfera w aucie momentalnie zrobiła się ciężka. Masz wrażenie, że zaraz kompletnie zabraknie wam powietrza.",
+"jump 4A28-49",
+],
 
 "4A28-34":
 [
@@ -1500,32 +1509,47 @@ Jump na miejscu.
 "jump fine",
 ],
 
-4A28-35
+"4A28-35":
+[
 "i - Zatrzymaj się.",
 "Stasiek wygląda na zdezorietnowanego, spogląda we wsteczne lusterko, a potem na Aśkę, szukając najpewniej jakiegoś wytłumaczenia.",
 "a - No stajesz czy nie?",
 "i - Zaraz pewnie stanie.",
 "Zaczynasz głośno chichotać. Auto zatrzymuje się na poboczu.",
 "s - I co teraz?",
+{
+		"Choice": {
+			"4A28-50": {
+			"Text": " - Teraz cię wyruchamy.",
+			"Do":"jump 4A28-50",
+		},
+			"4A28-51": {
+			"Text": " - Teraz mnie wyruchaj.",//fine
+			"Do":"jump 4A28-51",
+		},
+		"4A28-52": {
+		"Text": " - Teraz wyruchaj Aśkę.",//fine
+		"Do":"jump 4A28-52",
+	},
+	},
+},
+],
 
-1. - Teraz cię wyruchamy.
-2. - Teraz wyruchaj mnie.
-3. - Teraz wyruchaj Aśkę.
-
-4A28-36
+"4A28-36":
+[
 "i - Chcę na was popatrzeć.",
 "Twoje słowa wywołują niepewność w towaryszach twojej podróży.",
 "s - No przecież patrzysz cały czas.",
 "Aśka wzdycha głęboko i potrząsa głową.",
 "i - Ja chcę zobaczyć jak się bzykacie.",
-"Stasiek robi zaskoczoną minę. Samochód odczuwalnie zwalnia, a atmosfera w środku robi się jeszcze bardziej napięta. Po chwili cicho odzywa się Aśka.",
-"a - Będziesz... tylko patrzeć.",
-
+"Stasiek robi zaskoczoną minę. Samochód odczuwalnie zwalnia, a atmosfera w środku robi się jeszcze bardziej napięta.",
+"a - Ty się już najlepiej zamknij. Muszę pomyśleć w ciszy."
+"Po chwili docieracie na miejsce."
 1. - Tak.
 (Dłuższa chwila milczenia, po czym Aśka mówi, że się zgadza, ale ma jeden warunek, że zrobią to po zmroku, przy świetle ogniska i wszyscy muszą być nadzy.),
 
 2. - Jeśli pozwolicie mi dołączyć. ( - Jeśli chcecie, mogę dołączyć.) Asia mówi że nie chce abyś dołaczała i że musi to przemyśleć. Docieracie na miejsce.
-
+],
 4A28-37
 "i - Tak, trójkącik!"
 "Zaczynasz się śmiać"
@@ -1863,4 +1887,3 @@ Jednak idziesz nad wodę z Aśką. Jest ci wdzięczna.
 ],
 
 };
-
