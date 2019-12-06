@@ -841,7 +841,7 @@ let script = {
 		 "Choice": {
 			 "4A34": {
 			 "Text": "Jednak idziesz z Aśką zobaczyć jaka jest woda.",
-			 "Do":"jump 4A36",
+			 "Do":"jump 4A34",
 		 },
 			 "4A35": {
 			 "Text": "Próbujesz rozstawić namiot.",
@@ -1520,7 +1520,7 @@ let script = {
 {
 		"Choice": {
 			"4A28-50": {
-			"Text": " - Teraz cię wyruchamy.",
+			"Text": " - Teraz cię wyruchamy.",//2-3 paragrafy i do fine
 			"Do":"jump 4A28-50",
 		},
 			"4A28-51": {
@@ -1545,6 +1545,8 @@ let script = {
 "Stasiek robi zaskoczoną minę. Samochód odczuwalnie zwalnia, a atmosfera w środku robi się jeszcze bardziej napięta.",
 "a - Ty się już najlepiej zamknij. Muszę pomyśleć w ciszy."
 "Po chwili docieracie na miejsce."
+
+
 1. - Tak.
 (Dłuższa chwila milczenia, po czym Aśka mówi, że się zgadza, ale ma jeden warunek, że zrobią to po zmroku, przy świetle ogniska i wszyscy muszą być nadzy.),
 
@@ -1589,6 +1591,12 @@ i - No dobrze.
 4A28-46
 
 4A28-47
+4A28-48
+4A28-49
+
+4A28-50
+Teraz Cię wyruchamy
+prosta linia do FINE
 
 
 
@@ -1756,7 +1764,7 @@ i - No dobrze.
 },
 ],
 
-"4A34":
+"4A34"://główny wątek
 "a - Idziemy obczaić wodę. Poradzisz sobie?",
 "s - Pewka.",
 "Ruszacie z uśmiechami na twarzach. Asia idzie obok Ciebie tych kilkanaście kroków i wchodzi prosto do wody, zanużając się do kostek.",
@@ -1764,13 +1772,13 @@ i - No dobrze.
 "Wycofuje się znowu na brzeg, ściąga sukienkę, odsłaniając czarny, dwuczęsciowy kostium.",
 {
   "Choice": {
-    "4": {
+    "4009": {
     "Text": "Też ściągasz sukienkę.",
-    "Do":"jump 4",
+    "Do":"jump 4009",
   },
-    "4": {
+    "4010": {
     "Text": "Czekasz.",
-    "Do":"jump 4",
+    "Do":"jump 4010",
   },
 },
 },
@@ -1778,14 +1786,27 @@ i - No dobrze.
 
 
 "4A35":
-Zostajesz z namiotem, a Asia nie chce isc sama. Nalega.
-Asia krząta się przez moment przy aucie, pomagając Staśkowi z rozpakowywaniem. W końcu staje i głośno wzdycha.
- - Ida, idziesz zobaczyć wodę?
+[
+"Postanawiasz najpierw zająć się namiotem.",
+"Asia krząta się przez moment przy aucie, pomagając Staśkowi z rozpakowywaniem. W końcu staje i głośno wzdycha.",
+"a - Ida, idziesz zobaczyć wodę?",
+{
+  "Choice": {
+    "4011": {
+    "Text": "Przytakujesz i idziesz z nią nad brzeg",
+    "Do":"jump 4011",
+  },
+    "4012": {
+    "Text": " - Wolę najpierw ogarnąć namiot.",
+    "Do":"jump 4012",
+  },
+},
+],
 
+"4A36":[
 
-"4A36":
 Jednak idziesz nad wodę z Aśką. Jest ci wdzięczna.
-
+],
 
 
 
@@ -1844,6 +1865,136 @@ Jednak idziesz nad wodę z Aśką. Jest ci wdzięczna.
 "4007":
 
 "4008":
+
+
+"4009":
+[
+//Też ściągasz sukienkę
+"Również ściągasz sukienkę.",
+"Asia rzuca sukienkę na ziemię i znów wchodzi do wody, tym razem kawałek dalej. Zatrzymuje się kilka metrów dalej i spogląda na ciebie z uśmiechem.",
+"a - Ładny stanik.",
+"Zastanawiasz się przez krótki moment, czy twoja bielizna nie jest zbyt prześwitująca.",
+{
+  "Choice": {
+    "4013": {
+    "Text": " - Jednak popływam w bieliźnie.",
+    "Do":"jump 4013",
+  },
+    "4014": {
+    "Text": "Podziękuj i zdejmij bieliznę.",
+    "Do":"jump 4014",
+  },
+},
+],
+
+"4010":[
+  //czekasz
+"Asia rzuca sukienkę na brzeg i znów wchodzi do wody, tym razem kawałek dalej. Następnie zatrzymuje się i spogląda na ciebie.",
+"a - Wchodzisz?",
+{
+  "Choice": {
+    "4013": {
+    "Text": " - Wchodzę, ale jednak popływam w bieliźnie, bo trochę mi głupio.",
+    "Do":"jump 4013",
+  },
+    "4015": {
+    "Text": " - No... Zaraz.",
+    "Do":"jump 4015",
+  },
+},
+
+],
+
+
+"4011":
+[
+  //Przytakujesz i idziesz z nią nad brzeg.
+"Asia idzie obok Ciebie tych kilkanaście kroków i wchodzi prosto do wody, zanużając się do kostek.",
+"a - Jest super. - Mówi radośnie. Przez chwilę patrzy na ciebie, a potem znów się odzywa. - Eh, jeszcze w tym roku się nie kąpałam.",
+"Wycofuje się znowu na brzeg, ściąga sukienkę, odsłaniając czarny, dwuczęsciowy kostium.",
+{
+  "Choice": {
+    "4009": {
+    "Text": "Też ściągasz sukienkę.",
+    "Do":"jump 4009",
+  },
+    "4010": {
+    "Text": "Czekasz.",
+    "Do":"jump 4010",
+  },
+},
+],
+
+
+
+"4012":
+[
+Wolisz zająć się namiotem
+- Okej. To idę sama.
+Asia idzie nad wodę. Rozpakowujesz namiot i próbujesz sobie przypomnieć jak się go rostawiało.
+1. spytaj staśka o pomoc
+
+2. Poddaj się i usiądź na kocu.
+],
+
+
+
+
+
+
+
+
+
+
+
+"4013":
+//jednak w bieliźnie
+Asia odwraca się w strone jeziora. 
+ - No jak chcesz, ale ja mogę odpłynąć kawałek i nie patrzyć na ciebie. A Stasiek na pewno nie zobaczy co tu robisz.
+Mówi to i powoli idzie w głąb jeziora. Ściągasz sukienkę i rzucasz ją koło jej sukienki. Ściągasz bieliznę?
+1. tak
+2, Upewniasz się że nikt nie patrzy i ściągasz
+
+"4014":
+//zdejmujesz
+Asia widząc, że dalej się rozbierasz, odwraca się w strone jeziora. Rozglądasz się szybko, by upewnić, że nikt obcy cię nie podgląda. Powoli rozpinasz stanik, zrzucasz go na ziemię, a potem ściaasz majtki. 
+Naga wchodzisz powoli do wody. Instynktownie zasłaniasz piersi lewą ręką, a krocze prawą. Robisz krótkie kroki. Asia delikatnie odwraca się i spogląda na ciebie, a potem z uśmiechem przyspiesza kroku, odrobinę powiększając dystans.
+1. Też przyspieszasz krok, żeby szybciej się zanurzyć
+2. Wasze spojrzenia spotykają się. Przesuwasz lewą dłoń nieco niżej, odsłaniając prawą pierś i sutek.
+
+
+
+
+
+"4015":
+{
+"i - No... Zaraz."
+"Zastnawiasz się przez chwilę, a następnie, zdobywasz się na odwagę i zdjemujesz swoją sukienkę.",
+"a - Ładny stanik.",
+"Zastanawiasz się przez krótki moment, czy twoja bielizna nie jest zbyt prześwitująca.",
+{
+  "Choice": {
+    "4013": {
+    "Text": " - Jednak popływam w bieliźnie.",
+    "Do":"jump 4013",
+  },
+   },
+},
+
+
+
+
+
+"4016":
+
+
+
+
+
+
+
+
+
 
 
 
