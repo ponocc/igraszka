@@ -1930,7 +1930,7 @@ Jednak idziesz nad wodę z Aśką. Jest ci wdzięczna.
 "4012":
 [
 Wolisz zająć się namiotem
-- Okej. To idę sama.
+a - Okej. To idę sama.
 Asia idzie nad wodę. Rozpakowujesz namiot i próbujesz sobie przypomnieć jak się go rostawiało.
 1. spytaj staśka o pomoc
 
@@ -1948,20 +1948,42 @@ Asia idzie nad wodę. Rozpakowujesz namiot i próbujesz sobie przypomnieć jak s
 
 
 "4013":
-//jednak w bieliźnie
-Asia odwraca się w strone jeziora. 
- - No jak chcesz, ale ja mogę odpłynąć kawałek i nie patrzyć na ciebie. A Stasiek na pewno nie zobaczy co tu robisz.
-Mówi to i powoli idzie w głąb jeziora. Ściągasz sukienkę i rzucasz ją koło jej sukienki. Ściągasz bieliznę?
-1. tak
-2, Upewniasz się że nikt nie patrzy i ściągasz
+[
+"Asia odwraca się w strone jeziora.",
+"a - No jak chcesz, ale ja mogę odpłynąć kawałek i nie patrzyć na ciebie. A Stasiek na pewno nie zobaczy co robisz.",
+"Mówi to i powoli idzie w głąb jeziora. Ściągasz sukienkę i rzucasz ją na ziemie, obok ubrania Aśki.",
+"Obserwując powoli oddalającą się dziewczynę, zastanawiasz się, czy powinnaś zdjąć bieliznę.",
+{
+  "Choice": {
+    "4014": {
+    "Text": "Zdejmij wszystko.",
+    "Do":"jump 4014",
+  },
+    "4017": {
+    "Text": "Upewnij się, że nikt nie patrzy i rozepnij stanik.",
+    "Do":"jump 4017",
+  },
+},
+],
 
 "4014":
+[
 //zdejmujesz
-Asia widząc, że dalej się rozbierasz, odwraca się w strone jeziora. Rozglądasz się szybko, by upewnić, że nikt obcy cię nie podgląda. Powoli rozpinasz stanik, zrzucasz go na ziemię, a potem ściaasz majtki. 
-Naga wchodzisz powoli do wody. Instynktownie zasłaniasz piersi lewą ręką, a krocze prawą. Robisz krótkie kroki. Asia delikatnie odwraca się i spogląda na ciebie, a potem z uśmiechem przyspiesza kroku, odrobinę powiększając dystans.
-1. Też przyspieszasz krok, żeby szybciej się zanurzyć
-2. Wasze spojrzenia spotykają się. Przesuwasz lewą dłoń nieco niżej, odsłaniając prawą pierś i sutek.
+"Asia widząc, że dalej się rozbierasz, odwraca się w strone jeziora. Rozglądasz się szybko, by upewnić, że nikt obcy cię nie podgląda. Powoli rozpinasz stanik, zrzucasz go na ziemię, a potem ściąsz majtki.",
+"Naga powoli wchodzisz do wody. Instynktownie zasłaniasz piersi lewą ręką, a krocze prawą. Robisz krótkie kroki. Asia delikatnie odwraca się i spogląda na ciebie, a potem z uśmiechem przyspiesza kroku, odrobinę powiększając dystans pomiędzy wami.",
+{
+  "Choice": {
+    "4018": {
+    "Text": "Też przyspieszasz krok, żeby szybciej się zanurzyć",
+    "Do":"jump 4018",
+  },
+    "4019": {
+    "Text": "Odsłaniasz się nieco.",
+    "Do":"jump 4019",
+  },
+},
 
+],
 
 
 
@@ -1981,28 +2003,85 @@ Naga wchodzisz powoli do wody. Instynktownie zasłaniasz piersi lewą ręką, a 
    },
 },
 
+"4016":[//puste],
+
+
+"4017":
+[//tylko stanik zdjęty
+"Niby to tylko kilka kroków, ale auto stoi za niewilkimi krzakami, nigdzie nie widać Stasia, więc powoli rozpinasz stanik i zrzucasz go na ziemie.",
+"Prawie naga wchodzisz powoli do wody. Asia jest przed tobą dwa kroki. Instynktownie zasłaniasz piersi lewą ręką i idziesz bardzo powoli. Asia delikatnie odwraca się i spogląda na ciebie, a potem z uśmiechem przyspiesza kroku, odrobinę powiększając dystans.",
+{
+  "Choice": {
+    "4018": {
+    "Text": "Też przyspieszasz krok, żeby szybciej się zanurzyć",
+    "Do":"jump 4018",
+  },
+    "4019": {
+    "Text": "Odsłaniasz się nieco.",
+    "Do":"jump 4019",
+  },
+},
+],
 
 
 
+"4018":
+[
+	//naga przyspiesza
+"Też przyspieszasz, starając się szybciej zanurzyć.",
+"a - Brrr... Ale zimna. - Woda sięga dziewczynie już do pasa. Odwraca się w twoją stronę całym ciałem i po chwili mówi.",
+"a - Pewnie czułabyś się lepiej jakbym też była goła, co?",
+{
+  "Choice": {
+    "4020": {
+    "Text": "No... Pewnie tak.",
+    "Do":"jump 4020",
+  },
+    "4021": {
+    "Text": "Nie, po prostu mi zimno.",
+    "Do":"jump 4021",
+  },
+},
+],
 
-"4016":
+"4019":
+//naga odsłania się
+[
+"Przesuwasz lewą dłoń nieco niżej, odsłaniając prawą pierś i sutek. Twoje spojrzenie spotyka nagle wzrok Aśki, która bardzo uważnie śledzi ruch twojej dłoni.",
+"a - Nie masz się czego wstydzić. - Mówi spokojnie i z uśmiechem. - Brrr... Ale zimna.",
+"Woda sięga jej już do pasa. W pewnym momencie, gdy jesteście już dość blisko siebie, Aśka odwraca się całkowicie w twoją stronę i mówi."
+"a - Pewnie wolałabyś, żebym też była goła.",
+{
+  "Choice": {
+    "4022": {
+    "Text": "Zdecydowanie.",
+    "Do":"jump 4022",
+  },
+    "4021": {
+    "Text": "Po prostu mi zimno.",
+    "Do":"jump 4021",
+  },
+},
 
+],
 
+"4020":
+[
+"i - No... Pewnie tak.",
+"a - Tak myślałam. - Mówi cicho, śmiejąc się delikatnie.",
+"Nagle sięga dłońmi za siebie i rozpina stanik, uwalniając swoje piersi. Kilka kroków na prawo od was leży przewalone drzewo. Odkłada stanik na kłodę, a potem odwraca się do Ciebie, uśmiecha głupokowato i wchodzi głębiej do wody.",
+],
 
+"4021":
+"i - Trochę mi zimno.",
+a - No to zanurz się szybko, woda jest super. - Mówi, po czym odwraca się i całkowicie znika pod wodą. Wchodzisz coraz głębiej i stopniowo przyzwyczajasz się do temperatury wody. Wreszcie zanurzasz głowę pod wodą i próbujesz płynąć. Spostrzegasz Asię unoszacą się na wodzie kilka metrów od ciebie.
 
+Podpływasz do niej
+Płyniesz nieco w bok, żeby zachować dystans.
 
+"4022":
 
-
-
-
-
-
-
-
-
-
-
-
+"i - Zdecydowanie.",
 
 
 "4B1":
